@@ -110,13 +110,22 @@
 </script>
 
 <style type="text/css">
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
     .bookshelf .thumb{
         display: inline-block;
         cursor: pointer; 
         margin: 0px 0.5%; 
-        width: 15% !important; 
+        width: 350px !important; 
         box-shadow:0px 1px 3px rgba(0,0,0,.3);
-        max-width:100px;
+        max-width:350px;
+    }
+    .bookshelf .thumb h2{
+        font-size: 32px;
     }
     .bookshelf .thumb img{
         width:100%; 
@@ -140,6 +149,7 @@
     .bookshelf{
         text-align: center;
         padding:0px;
+        width: 100%;
     }
 </style>
 
@@ -149,25 +159,44 @@
 
     <div class="bookshelf">
         <div class="covers">
-            <div class="thumb book-1"><video style="width: 100px; height: 129px;" loop autoplay muted src="videos/sample.mp4"></video></div>
-            <div class="thumb book-2"><img src="images/book2/thumb1.jpg"></div>
-            <div class="thumb book-3"><img src="images/book2/thumb1.jpg"></div>
-            <div class="thumb book-4"><img src="images/book2/thumb1.jpg"></div>
-            <div class="thumb book-4"><img src="images/book2/thumb1.jpg"></div>
+            <div class="thumb book-1">
+                <video style="width: 100%; height: 350px;" loop autoplay muted src="videos/sample.mp4"></video>
+                <h2>NABATAEN FARMS</h2>
+            </div>
+            <div class="thumb book-2">
+                <img src="images/shelf-thumbs/thumb.png" alt="">
+                <h2>NABATAEN VILLAGE</h2>
+            </div>
+            <div class="thumb book-3">
+                <img src="images/shelf-thumbs/thumb.png" alt="">
+                <h2>OASIS FARMS</h2>
+            </div>
+            <div class="thumb book-4">
+                <img src="images/shelf-thumbs/thumb.png" alt="">
+                <h2>ALULA CENTRAL</h2>
+            </div>
+            <div class="thumb book-5">
+                <img src="images/shelf-thumbs/thumb.png" alt="">
+                <h2>DADAN VILLAGE</h2>
+            </div>
+            <div class="thumb book-6">
+                <img src="images/shelf-thumbs/thumb.png" alt="">
+                <h2>ALJADIDAH VILLAGE</h2>
+            </div>
         </div>
-        <img class="shelf-img" src="images/shelf_wood.png">
+        <!-- <img class="shelf-img" src="images/shelf_wood.png"> -->
     </div>
 
-    <div class="bookshelf">
+    <!-- <div class="bookshelf">
         <div class="covers">
             <div class="thumb book-1"><img src="images/book2/thumb1.jpg"></div>
             <div class="thumb book-2"><img src="images/book2/thumb1.jpg"></div>
             <div class="thumb book-3"><img src="images/book2/thumb1.jpg"></div>
         </div>
         <img class="shelf-img"  src="images/shelf_glass.png">
-    </div>
+    </div> -->
 
-    <div class="bookshelf">
+    <!-- <div class="bookshelf">
         <div class="covers">
             <div class="thumb book-1"><img src="images/book2/thumb1.jpg"></div>
             <div class="thumb book-2"><img src="images/book2/thumb1.jpg"></div>
@@ -175,7 +204,7 @@
             <div class="thumb book-4"><img src="images/book2/thumb1.jpg"></div>
         </div>
         <img class="shelf-img" src="images/shelf_metal.png">
-    </div>
+    </div> -->
 
 </body>
 
