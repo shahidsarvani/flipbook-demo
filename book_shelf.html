@@ -110,6 +110,10 @@
 </script>
 
 <style type="text/css">
+    @font-face {
+        font-family: 'HelveticaNeue';
+        src: url('fonts/HelveticaNeue.ttf');
+    }
     body{
         display: flex;
         justify-content: center;
@@ -126,6 +130,7 @@
     }
     .bookshelf .thumb h2{
         font-size: 32px;
+        font-family: 'HelveticaNeue';
     }
     .bookshelf .thumb img{
         width:100%; 
@@ -160,7 +165,8 @@
     <div class="bookshelf">
         <div class="covers">
             <div class="thumb book-1">
-                <video style="width: 100%; height: 350px;" loop autoplay muted src="videos/sample.mp4"></video>
+                <!-- <video style="width: 100%; height: 350px;" loop autoplay muted src="videos/sample.mp4"></video> -->
+                <img src="images/shelf-thumbs/thumb.png" alt="">
                 <h2>NABATAEN FARMS</h2>
             </div>
             <div class="thumb book-2">
