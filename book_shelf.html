@@ -5,25 +5,25 @@
         <script src="js/jquery.js"></script>
         <link rel="stylesheet" type="text/css" href="css/flipbook.style.css">
         <script src="js/flipbook.min.js"></script>
-        <script src="js/custom-jquery.js"></script>
         <script type="text/javascript">
             $(document).ready(function () {
                 $(".book-1").flipBook({
                     pages:[
                     {
-                        src: "images/book2/page-darkbg.jpg",
-                        thumb: "images/book2/thumb1.jpg",
-                        title: "Cover",
-                        startPage: 2,
-                        lightboxStartPage: 2,
-                        layout:2,
-                        htmlContent: '<iframe width="770" height="1100" src="videos/A3.mp4" frameborder="0" allowfullscreen></iframe>'
-                        // htmlContent: '<a href="3d.html">link to 3d flipbook</a><p style="color:#FFF">HTML Content on the page</p><div style="position:absolute;top:400px;"></div>'
-                    },
-                    {
-                        src: "images/book2/book-images/full/index.png", thumb: "images/book2/thumb2.jpg", title: "Page two",
+                        src: "images/book2/book-images/index.png", thumb: "images/book2/thumb2.jpg", title: "Page two",
                         // htmlContent: '<iframe width="770" height="1200" src="videos/A3.mp4" frameborder="0" allowfullscreen></iframe>'
                     },
+                    {
+                        src: "images/book2/video-bg.png",
+                        thumb: "images/book2/thumb1.jpg",
+                        title: "Cover",
+                        htmlContent: '<iframe width="1600" height="1000" src="videos/A3.mp4" frameborder="0" allowfullscreen></iframe>'
+                        // htmlContent: '<a href="3d.html">link to 3d flipbook</a><p style="color:#FFF">HTML Content on the page</p><div style="position:absolute;top:400px;"></div>'
+                    },
+                    // {
+                    //     src: "images/book2/book-images/full/index.png", thumb: "images/book2/thumb2.jpg", title: "Page two",
+                    //     // htmlContent: '<iframe width="770" height="1200" src="videos/A3.mp4" frameborder="0" allowfullscreen></iframe>'
+                    // },
                     {
                         src: "images/book2/book-images/full/project_1.jpg", thumb: "images/book2/thumb3.jpg", title: "Page three",
                         // htmlContent: '<iframe width="770" height="1200" src="videos/B2.mp4" frameborder="0" allowfullscreen></iframe>'        
@@ -46,6 +46,8 @@
                     },
                     { src: "images/book2/page8.jpg", thumb: "images/book2/thumb8.jpg", title: "Last" }
                     ],
+                    // startPage: 2,
+                    // lightboxStartPage: 2,
                     lightBox:true,
                     lightboxResetOnOpen:true,
                     menu2OverBook: true
