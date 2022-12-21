@@ -16,12 +16,6 @@
 
     $(document).ready(function () {
 
-        $('.flipbook-overlay').click(function() {
-            location.reload(true);
-            // console.log('closed');
-            alert("clicked");
-        });
-
         //alert("clicked");
 
         $(".book-1").flipBook({
@@ -161,6 +155,13 @@
             ],
             lightBox:true,
             lightboxResetOnOpen:true
+        });
+
+        $('body .flipbook-overlay').click(function() {
+            // location.reload();
+            // console.log('closed');
+            alert("clicked");
+            window.location.reload();
         });
 
     })
