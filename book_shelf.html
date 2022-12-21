@@ -6,7 +6,9 @@
         <link rel="stylesheet" type="text/css" href="css/flipbook.style.css">
         <script src="js/flipbook.min.js"></script>
         <script type="text/javascript">
+            let openedF = ''
             $(document).ready(function () {
+
                 $(".book-1").flipBook({
                     pages:[
                     {
@@ -26,21 +28,21 @@
                     // },
                     {
                         src: "images/book2/book-images/full/project_1.jpg", thumb: "images/book2/thumb3.jpg", title: "Page three",
-                        // htmlContent: '<iframe width="770" height="1200" src="videos/B2.mp4" frameborder="0" allowfullscreen></iframe>'        
+                        // htmlContent: '<iframe width="770" height="1200" src="videos/B2.mp4" frameborder="0" allowfullscreen></iframe>'
                     },
-                    { 
-                        src: "images/book2/book-images/full/project_3.jpg", thumb: "images/book2/thumb4.jpg", title: "Page Four", 
+                    {
+                        src: "images/book2/book-images/full/project_3.jpg", thumb: "images/book2/thumb4.jpg", title: "Page Four",
                         // htmlContent: '<iframe width="770" height="1200" src="videos/C1.mp4" frameborder="0" allowfullscreen></iframe>'
                     },
-                    { 
+                    {
                         src: "images/book2/book-images/full/project_2.jpg", thumb: "images/book2/thumb5.jpg", title: "Page five" ,
                         // htmlContent: '<iframe width="770" height="1200" src="videos/D5.mp4" frameborder="0" allowfullscreen></iframe>'
                     },
-                    { 
+                    {
                         src: "images/book2/book-images/full/project_5.jpg", thumb: "images/book2/thumb5.jpg", title: "Page Six" ,
                         // htmlContent: '<iframe width="770" height="1200" src="videos/E4.mp4" frameborder="0" allowfullscreen></iframe>'
                     },
-                    { 
+                    {
                         src: "images/book2/book-images/full/project_4.jpg", thumb: "images/book2/thumb5.jpg", title: "Page Seven" ,
                         // htmlContent: '<iframe width="770" height="1200" src="videos/F6.mp4" frameborder="0" allowfullscreen></iframe>'
                     },
@@ -54,10 +56,10 @@
 
                 $(".book-2").flipBook({
                     pages:[
-                        {src:"images/book2/page2.jpg", thumb:"images/book2/thumb2.jpg", title:"Page two"},    
+                        {src:"images/book2/page2.jpg", thumb:"images/book2/thumb2.jpg", title:"Page two"},
                         {
                             src: "images/book2/video-bg.png",
-                            thumb:"images/book2/thumb1.jpg", 
+                            thumb:"images/book2/thumb1.jpg",
                             title:"Cover",
                             htmlContent: '<iframe width="1600" height="1000" src="videos/B2.mp4" frameborder="0" allowfullscreen></iframe>'
                         },
@@ -77,10 +79,10 @@
 
                 $(".book-3").flipBook({
                     pages:[
-                        {src:"images/book2/page2.jpg", thumb:"images/book2/thumb2.jpg", title:"Page two"},    
+                        {src:"images/book2/page2.jpg", thumb:"images/book2/thumb2.jpg", title:"Page two"},
                         {
                             src: "images/book2/video-bg.png",
-                            thumb:"images/book2/thumb1.jpg", 
+                            thumb:"images/book2/thumb1.jpg",
                             title:"Cover",
                             htmlContent: '<iframe width="1600" height="1000" src="videos/C1.mp4" frameborder="0" allowfullscreen></iframe>'
                         },
@@ -103,7 +105,7 @@
                         {src:"images/book2/page2.jpg", thumb:"images/book2/thumb2.jpg", title:"Page two"},
                         {
                             src: "images/book2/video-bg.png",
-                            thumb:"images/book2/thumb1.jpg", 
+                            thumb:"images/book2/thumb1.jpg",
                             title:"Cover",
                             htmlContent: '<iframe width="1600" height="1000" src="videos/D5.mp4" frameborder="0" allowfullscreen></iframe>'
                         },
@@ -126,7 +128,7 @@
                         {src:"images/book2/page2.jpg", thumb:"images/book2/thumb2.jpg", title:"Page two"},
                         {
                             src: "images/book2/video-bg.png",
-                            thumb:"images/book2/thumb1.jpg", 
+                            thumb:"images/book2/thumb1.jpg",
                             title:"Cover",
                             htmlContent: '<iframe width="1600" height="1000" src="videos/E4.mp4" frameborder="0" allowfullscreen></iframe>'
                         },
@@ -149,7 +151,7 @@
                         {src:"images/book2/page2.jpg", thumb:"images/book2/thumb2.jpg", title:"Page two"},
                         {
                             src: "images/book2/video-bg.png",
-                            thumb:"images/book2/thumb1.jpg", 
+                            thumb:"images/book2/thumb1.jpg",
                             title:"Cover",
                             htmlContent: '<iframe width="1600" height="1000" src="videos/F6.mp4" frameborder="0" allowfullscreen></iframe>'
                         },
@@ -174,6 +176,14 @@
                 //     window.location.reload();
                 //     $('body video').attr('pause','true');
                 // });
+
+
+                if(location.hash) {
+                    console.log(location.hash.substr(1), '.' + location.hash.substr(1))
+                    $('.' + location.hash.substr(1)).click()
+                } else {
+                    // Fragment doesn't exist
+                }
             })
         </script>
 
@@ -209,9 +219,9 @@
             }
             .bookshelf .thumb {
                 display: inline-block;
-                cursor: pointer; 
-                margin: 0px 0.5%; 
-                width: 350px !important; 
+                cursor: pointer;
+                margin: 0px 0.5%;
+                width: 350px !important;
                 box-shadow:0px 1px 3px rgba(0,0,0,.3);
                 max-width:350px;
             }
@@ -229,21 +239,21 @@
                 padding-bottom: 10px;
             }
             .bookshelf .thumb img {
-                width:100%; 
-                display:block; 
+                width:100%;
+                display:block;
                 /* vertical-align:top; */
             }
             .bookshelf .shelf-img {
-                z-index:0; 
-                height: auto; 
-                max-width: 100%; 
-                vertical-align: top; 
-                margin-top:-12px; 
+                z-index:0;
+                height: auto;
+                max-width: 100%;
+                vertical-align: top;
+                margin-top:-12px;
             }
             .bookshelf .covers {
-                width:100%; 
-                height:auto; 
-                z-index: 99; 
+                width:100%;
+                height:auto;
+                z-index: 99;
                 position: relative;
                 text-align:center;
             }
@@ -262,38 +272,38 @@
     <body>
         <div class="bookshelf">
             <div class="covers">
-                <div class="thumb book-1">
+                <div class="thumb" onclick="closeModal('book-1')">
                     <!-- <video style="width: 100%; height: 350px;" loop autoplay muted src="videos/sample.mp4"></video> -->
                     <div class="thumbnail">
                         <img src="images/shelf-thumbs/dadan.png" alt="">
                     </div>
                     <h2>DADAN VILLAGE</h2>
                 </div>
-                <div class="thumb book-2">
+                <div class="thumb" onclick="closeModal('book-2')">
                     <div class="thumbnail">
                         <img src="images/shelf-thumbs/alula.png" alt="">
                     </div>
                     <h2>ALULA CENTRAL</h2>
                 </div>
-                <div class="thumb book-3">
+                <div class="thumb" onclick="closeModal('book-3')">
                     <div class="thumbnail">
                         <img src="images/shelf-thumbs/oasis.png" alt="">
                     </div>
                     <h2>OASIS FARMS</h2>
                 </div>
-                <div class="thumb book-4">
+                <div class="thumb" onclick="closeModal('book-4')">
                     <div class="thumbnail">
                         <img src="images/shelf-thumbs/naba-village.png" alt="">
                     </div>
                     <h2>NABATEAN VILLAGE</h2>
                 </div>
-                <div class="thumb book-5">
+                <div class="thumb" onclick="closeModal('book-5')">
                     <div class="thumbnail">
                         <img src="images/shelf-thumbs/naba-farms2.png" alt="">
                     </div>
                     <h2>NABATAEAN FARMS</h2>
                 </div>
-                <div class="thumb book-6">
+                <div class="thumb" onclick="closeModal('book-6')">
                     <div class="thumbnail">
                         <img src="images/shelf-thumbs/aljadidah.png" alt="">
                     </div>
@@ -301,6 +311,12 @@
                 </div>
             </div>
         </div>
+        <div class="book-1"></div>
+        <div class="book-2"></div>
+        <div class="book-3"></div>
+        <div class="book-4"></div>
+        <div class="book-5"></div>
+        <div class="book-6"></div>
 
         <!-- <div class="bookshelf">
             <div class="covers">
@@ -328,6 +344,13 @@
             //         console.log('closed');
             //     });
             // });
+
+            function closeModal(cls) {
+                openedF = cls
+                console.log(cls, window.location, window.location.origin + window.location.pathname)
+                window.location = window.location.origin + window.location.pathname + '#' + cls
+                location.reload();
+            }
         </script>
     </body>
 </html>
