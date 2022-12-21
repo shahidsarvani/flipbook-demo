@@ -26,6 +26,9 @@
                 src: "images/book2/page-darkbg.jpg",
                 thumb: "images/book2/thumb1.jpg",
                 title: "Cover",
+                startPage: 2,
+                lightboxStartPage: 2,
+                layout:2,
                 htmlContent: '<iframe width="770" height="1100" src="videos/A3.mp4" frameborder="0" allowfullscreen></iframe>'
                 // htmlContent: '<a href="3d.html">link to 3d flipbook</a><p style="color:#FFF">HTML Content on the page</p><div style="position:absolute;top:400px;"></div>'
             },
@@ -56,7 +59,8 @@
             { src: "images/book2/page8.jpg", thumb: "images/book2/thumb8.jpg", title: "Last" }
             ],
             lightBox:true,
-            lightboxResetOnOpen:true
+            lightboxResetOnOpen:true,
+            menu2OverBook: true
         });
 
         $(".book-2").flipBook({
@@ -190,8 +194,15 @@
     }
     body.flipbook-overflow-hidden .bookshelf{
         position: fixed;
-        top: 35px;
+        top: 0px;
         transition: 0.5s;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 32px 0;
+        z-index: 99999999999;
+    }
+    .flipbook-overlay{
+        background-color: rgba(0, 0, 0, 0.6) !important;
+        background-image: none !important;
     }
     body.flipbook-overflow-hidden .flipbook-overlay{
         top: 260px !important;
@@ -325,12 +336,11 @@
     </div> -->
 
     <script>
-        // $( document ).ready(function() {
-        //     $('.flipbook-menu-right .flipbook-menu-btn').click(function() {
-        //         windows.reload();
-        //         console.log('closed');
-        //     });
-        // });
+        $( document ).ready(function() {
+            $('body.flipbook-overflow-hidden .thumb').click(function() {
+                window.location.reload();
+            });
+        });
     </script>
 
 </body>
