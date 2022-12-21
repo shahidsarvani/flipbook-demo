@@ -1,18 +1,146 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/flipbook.style.css">
+        <script src="js/jquery.js"></script>
+        <script src="js/flipbook.min.js"></script>
+        <script src="js/custom-jquery.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('*[data-name="btnClose"]').click(function() {
+                    console.log('closed');
+                });
+                $(document).children().filter(function() {
+                    console.log($(this));//.data('name'));
+                });//.click(function() {
+                    //console.log('closed');
+                //});
 
-<head>
+                $('.flipbook-overlay').click(function() {
+                location.reload(true);
+                // console.log('closed');
+                //alert("clicked");
+                });
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+                $(".book-1").flipBook({
+                    pages:[
+                    {
+                        src: "images/book2/page-darkbg.jpg",
+                        thumb: "images/book2/thumb1.jpg",
+                        title: "Cover",
+                        htmlContent: '<iframe width="770" height="1100" src="videos/A3.mp4" frameborder="0" allowfullscreen></iframe>'
+                        // htmlContent: '<a href="3d.html">link to 3d flipbook</a><p style="color:#FFF">HTML Content on the page</p><div style="position:absolute;top:400px;"></div>'
+                    },
+                    {
+                        src: "images/book2/book-images/index.png", thumb: "images/book2/thumb2.jpg", title: "Page two",
+                        // htmlContent: '<iframe width="770" height="1200" src="videos/A3.mp4" frameborder="0" allowfullscreen></iframe>'
+                    },
+                    {
+                        src: "images/book2/book-images/project_1.jpg", thumb: "images/book2/thumb3.jpg", title: "Page three",
+                        // htmlContent: '<iframe width="770" height="1200" src="videos/B2.mp4" frameborder="0" allowfullscreen></iframe>'        
+                    },
+                    { 
+                        src: "images/book2/book-images/project_3.jpg", thumb: "images/book2/thumb4.jpg", title: "Page Four", 
+                        // htmlContent: '<iframe width="770" height="1200" src="videos/C1.mp4" frameborder="0" allowfullscreen></iframe>'
+                    },
+                    { 
+                        src: "images/book2/book-images/project_2.jpg", thumb: "images/book2/thumb5.jpg", title: "Page five" ,
+                        // htmlContent: '<iframe width="770" height="1200" src="videos/D5.mp4" frameborder="0" allowfullscreen></iframe>'
+                    },
+                    { 
+                        src: "images/book2/book-images/project_5.jpg", thumb: "images/book2/thumb5.jpg", title: "Page Six" ,
+                        // htmlContent: '<iframe width="770" height="1200" src="videos/E4.mp4" frameborder="0" allowfullscreen></iframe>'
+                    },
+                    { 
+                        src: "images/book2/book-images/project_4.jpg", thumb: "images/book2/thumb5.jpg", title: "Page Seven" ,
+                        // htmlContent: '<iframe width="770" height="1200" src="videos/F6.mp4" frameborder="0" allowfullscreen></iframe>'
+                    },
+                    { src: "images/book2/page8.jpg", thumb: "images/book2/thumb8.jpg", title: "Last" }
+                    ],
+                    lightBox:true,
+                    lightboxResetOnOpen:true
+                });
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
+                $(".book-2").flipBook({
+                    pages:[
+                        {
+                            src:"images/book2/page-darkbg.jpg", 
+                            thumb:"images/book2/thumb1.jpg", 
+                            title:"Cover",
+                            htmlContent: '<iframe width="770" height="1100" src="videos/B2.mp4" frameborder="0" allowfullscreen></iframe>'
+                        },
+                        {src:"images/book2/page2.jpg", thumb:"images/book2/thumb2.jpg", title:"Page two"},
+                        {src:"images/book2/page3.jpg", thumb:"images/book2/thumb3.jpg", title:"Page three"},
+                        {src:"images/book2/page4.jpg", thumb:"images/book2/thumb4.jpg", title:""},
+                        {src:"images/book2/page5.jpg", thumb:"images/book2/thumb5.jpg", title:"Page five"},
+                        {src:"images/book2/page6.jpg", thumb:"images/book2/thumb6.jpg", title:"Page six"},
+                        {src:"images/book2/page7.jpg", thumb:"images/book2/thumb7.jpg", title:"Page seven"},
+                        {src:"images/book2/page8.jpg", thumb:"images/book2/thumb8.jpg", title:"Last"}
+                    ],
+                    lightBox:true,
+                    lightboxResetOnOpen:true
+                });
 
-<link rel="stylesheet" type="text/css" href="css/flipbook.style.css">
+                $(".book-3").flipBook({
+                    pages:[
+                        {
+                            src:"images/book2/page-darkbg.jpg", 
+                            thumb:"images/book2/thumb1.jpg", 
+                            title:"Cover",
+                            htmlContent: '<iframe width="770" height="1100" src="videos/C1.mp4" frameborder="0" allowfullscreen></iframe>'
+                        },
+                        {src:"images/book2/page2.jpg", thumb:"images/book2/thumb2.jpg", title:"Page two"},
+                        {src:"images/book2/page3.jpg", thumb:"images/book2/thumb3.jpg", title:"Page three"},
+                        {src:"images/book2/page4.jpg", thumb:"images/book2/thumb4.jpg", title:""},
+                        {src:"images/book2/page5.jpg", thumb:"images/book2/thumb5.jpg", title:"Page five"},
+                        {src:"images/book2/page6.jpg", thumb:"images/book2/thumb6.jpg", title:"Page six"},
+                        {src:"images/book2/page7.jpg", thumb:"images/book2/thumb7.jpg", title:"Page seven"},
+                        {src:"images/book2/page8.jpg", thumb:"images/book2/thumb8.jpg", title:"Last"}
+                    ],
+                    lightBox:true,
+                    lightboxResetOnOpen:true
+                });
 
-<script src="js/flipbook.min.js"></script>
-<script src="js/custom-jquery.js"></script>
+                $(".book-4").flipBook({
+                    pages:[
+                        {
+                            src:"images/book2/page-darkbg.jpg", 
+                            thumb:"images/book2/thumb1.jpg", 
+                            title:"Cover",
+                            htmlContent: '<iframe width="770" height="1100" src="videos/D5.mp4" frameborder="0" allowfullscreen></iframe>'
+                        },
+                        {src:"images/book2/page2.jpg", thumb:"images/book2/thumb2.jpg", title:"Page two"},
+                        {src:"images/book2/page3.jpg", thumb:"images/book2/thumb3.jpg", title:"Page three"},
+                        {src:"images/book2/page4.jpg", thumb:"images/book2/thumb4.jpg", title:""},
+                        {src:"images/book2/page5.jpg", thumb:"images/book2/thumb5.jpg", title:"Page five"},
+                        {src:"images/book2/page6.jpg", thumb:"images/book2/thumb6.jpg", title:"Page six"},
+                        {src:"images/book2/page7.jpg", thumb:"images/book2/thumb7.jpg", title:"Page seven"},
+                        {src:"images/book2/page8.jpg", thumb:"images/book2/thumb8.jpg", title:"Last"}
+                    ],
+                    lightBox:true,
+                    lightboxResetOnOpen:true
+                });
 
-<script type="text/javascript">
+                $(".book-5").flipBook({
+                    pages:[
+                        {
+                            src:"images/book2/page-darkbg.jpg", 
+                            thumb:"images/book2/thumb1.jpg", 
+                            title:"Cover",
+                            htmlContent: '<iframe width="770" height="1100" src="videos/E4.mp4" frameborder="0" allowfullscreen></iframe>'
+                        },
+                        {src:"images/book2/page2.jpg", thumb:"images/book2/thumb2.jpg", title:"Page two"},
+                        {src:"images/book2/page3.jpg", thumb:"images/book2/thumb3.jpg", title:"Page three"},
+                        {src:"images/book2/page4.jpg", thumb:"images/book2/thumb4.jpg", title:""},
+                        {src:"images/book2/page5.jpg", thumb:"images/book2/thumb5.jpg", title:"Page five"},
+                        {src:"images/book2/page6.jpg", thumb:"images/book2/thumb6.jpg", title:"Page six"},
+                        {src:"images/book2/page7.jpg", thumb:"images/book2/thumb7.jpg", title:"Page seven"},
+                        {src:"images/book2/page8.jpg", thumb:"images/book2/thumb8.jpg", title:"Last"}
+                    ],
+                    lightBox:true,
+                    lightboxResetOnOpen:true
+                });
 
     $(document).ready(function () {
 
@@ -249,39 +377,137 @@
             <div class="thumb book-6">
                 <img src="images/shelf-thumbs/thumb.png" alt="">
                 <h2>ALJADIDAH VILLAGE</h2>
+                $(".book-6").flipBook({
+                    pages:[
+                        {
+                            src:"images/book2/page-darkbg.jpg", 
+                            thumb:"images/book2/thumb1.jpg", 
+                            title:"Cover",
+                            htmlContent: '<iframe width="770" height="1100" src="videos/F6.mp4" frameborder="0" allowfullscreen></iframe>'
+                        },
+                        {src:"images/book2/page2.jpg", thumb:"images/book2/thumb2.jpg", title:"Page two"},
+                        {src:"images/book2/page3.jpg", thumb:"images/book2/thumb3.jpg", title:"Page three"},
+                        {src:"images/book2/page4.jpg", thumb:"images/book2/thumb4.jpg", title:""},
+                        {src:"images/book2/page5.jpg", thumb:"images/book2/thumb5.jpg", title:"Page five"},
+                        {src:"images/book2/page6.jpg", thumb:"images/book2/thumb6.jpg", title:"Page six"},
+                        {src:"images/book2/page7.jpg", thumb:"images/book2/thumb7.jpg", title:"Page seven"},
+                        {src:"images/book2/page8.jpg", thumb:"images/book2/thumb8.jpg", title:"Last"}
+                    ],
+                    lightBox:true,
+                    lightboxResetOnOpen:true
+                });
+            })
+        </script>
+        <style type="text/css">
+            @font-face {
+                font-family: 'HelveticaNeue';
+                src: url('fonts/HelveticaNeue.ttf');
+            }
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            .bookshelf .thumb {
+                display: inline-block;
+                cursor: pointer; 
+                margin: 0px 0.5%; 
+                width: 350px !important; 
+                box-shadow:0px 1px 3px rgba(0,0,0,.3);
+                max-width:350px;
+            }
+            .bookshelf .thumb h2 {
+                font-size: 32px;
+                font-family: 'HelveticaNeue';
+                font-weight: bold;
+                letter-spacing: 2px;
+                line-height: 38px;
+            }
+            .bookshelf .thumb img {
+                width:100%; 
+                display:block; 
+                /* vertical-align:top; */
+            }
+            .bookshelf .shelf-img {
+                z-index:0; 
+                height: auto; 
+                max-width: 100%; 
+                vertical-align: top; 
+                margin-top:-12px; 
+            }
+            .bookshelf .covers {
+                width:100%; 
+                height:auto; 
+                z-index: 99; 
+                position: relative;
+                text-align:center;
+            }
+            .bookshelf {
+                text-align: center;
+                padding:0px;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="bookshelf">
+            <div class="covers">
+                <div class="thumb book-1">
+                    <!-- <video style="width: 100%; height: 350px;" loop autoplay muted src="videos/sample.mp4"></video> -->
+                    <img src="images/shelf-thumbs/thumb.png" alt="">
+                    <h2>DADAN VILLAGE</h2>
+                </div>
+                <div class="thumb book-2">
+                    <img src="images/shelf-thumbs/thumb.png" alt="">
+                    <h2>ALULA CENTRAL</h2>
+                </div>
+                <div class="thumb book-3">
+                    <img src="images/shelf-thumbs/thumb.png" alt="">
+                    <h2>OASIS FARMS</h2>
+                </div>
+                <div class="thumb book-4">
+                    <img src="images/shelf-thumbs/thumb.png" alt="">
+                    <h2>NABATEAN VILLAGE</h2>
+                </div>
+                <div class="thumb book-5">
+                    <img src="images/shelf-thumbs/thumb.png" alt="">
+                    <h2>NABATAEAN FARMS</h2>
+                </div>
+                <div class="thumb book-6">
+                    <img src="images/shelf-thumbs/thumb.png" alt="">
+                    <h2>ALJADIDAH VILLAGE</h2>
+                </div>
             </div>
+            <!-- <img class="shelf-img" src="images/shelf_wood.png"> -->
         </div>
-        <!-- <img class="shelf-img" src="images/shelf_wood.png"> -->
-    </div>
 
-    <!-- <div class="bookshelf">
-        <div class="covers">
-            <div class="thumb book-1"><img src="images/book2/thumb1.jpg"></div>
-            <div class="thumb book-2"><img src="images/book2/thumb1.jpg"></div>
-            <div class="thumb book-3"><img src="images/book2/thumb1.jpg"></div>
-        </div>
-        <img class="shelf-img"  src="images/shelf_glass.png">
-    </div> -->
+        <!-- <div class="bookshelf">
+            <div class="covers">
+                <div class="thumb book-1"><img src="images/book2/thumb1.jpg"></div>
+                <div class="thumb book-2"><img src="images/book2/thumb1.jpg"></div>
+                <div class="thumb book-3"><img src="images/book2/thumb1.jpg"></div>
+            </div>
+            <img class="shelf-img"  src="images/shelf_glass.png">
+        </div> -->
 
-    <!-- <div class="bookshelf">
-        <div class="covers">
-            <div class="thumb book-1"><img src="images/book2/thumb1.jpg"></div>
-            <div class="thumb book-2"><img src="images/book2/thumb1.jpg"></div>
-            <div class="thumb book-3"><img src="images/book2/thumb1.jpg"></div>
-            <div class="thumb book-4"><img src="images/book2/thumb1.jpg"></div>
-        </div>
-        <img class="shelf-img" src="images/shelf_metal.png">
-    </div> -->
+        <!-- <div class="bookshelf">
+            <div class="covers">
+                <div class="thumb book-1"><img src="images/book2/thumb1.jpg"></div>
+                <div class="thumb book-2"><img src="images/book2/thumb1.jpg"></div>
+                <div class="thumb book-3"><img src="images/book2/thumb1.jpg"></div>
+                <div class="thumb book-4"><img src="images/book2/thumb1.jpg"></div>
+            </div>
+            <img class="shelf-img" src="images/shelf_metal.png">
+        </div> -->
 
-    <script>
-        // $( document ).ready(function() {
-        //     $('.flipbook-menu-right .flipbook-menu-btn').click(function() {
-        //         windows.reload();
-        //         console.log('closed');
-        //     });
-        // });
-    </script>
-
-</body>
-
+        <script>
+            // $( document ).ready(function() {
+            //     $('.flipbook-menu-right .flipbook-menu-btn').click(function() {
+            //         windows.reload();
+            //         console.log('closed');
+            //     });
+            // });
+        </script>
+    </body>
 </html>
