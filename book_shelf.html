@@ -49,19 +49,19 @@
                     // startPage: 2,
                     // lightboxStartPage: 2,
                     lightBox:true,
-                    lightboxResetOnOpen:true,
-                    menu2OverBook: true
+                    lightboxResetOnOpen:true
                 });
 
                 $(".book-2").flipBook({
                     pages:[
+                        {src:"images/book2/page2.jpg", thumb:"images/book2/thumb2.jpg", title:"Page two"},    
                         {
                             src:"images/book2/page-darkbg.jpg", 
                             thumb:"images/book2/thumb1.jpg", 
                             title:"Cover",
                             htmlContent: '<iframe width="770" height="1100" src="videos/B2.mp4" frameborder="0" allowfullscreen></iframe>'
                         },
-                        {src:"images/book2/page2.jpg", thumb:"images/book2/thumb2.jpg", title:"Page two"},
+                        // {src:"images/book2/page2.jpg", thumb:"images/book2/thumb2.jpg", title:"Page two"},
                         {src:"images/book2/page3.jpg", thumb:"images/book2/thumb3.jpg", title:"Page three"},
                         {src:"images/book2/page4.jpg", thumb:"images/book2/thumb4.jpg", title:""},
                         {src:"images/book2/page5.jpg", thumb:"images/book2/thumb5.jpg", title:"Page five"},
@@ -75,13 +75,14 @@
 
                 $(".book-3").flipBook({
                     pages:[
+                        {src:"images/book2/page2.jpg", thumb:"images/book2/thumb2.jpg", title:"Page two"},    
                         {
                             src:"images/book2/page-darkbg.jpg", 
                             thumb:"images/book2/thumb1.jpg", 
                             title:"Cover",
                             htmlContent: '<iframe width="770" height="1100" src="videos/C1.mp4" frameborder="0" allowfullscreen></iframe>'
                         },
-                        {src:"images/book2/page2.jpg", thumb:"images/book2/thumb2.jpg", title:"Page two"},
+                        // {src:"images/book2/page2.jpg", thumb:"images/book2/thumb2.jpg", title:"Page two"},
                         {src:"images/book2/page3.jpg", thumb:"images/book2/thumb3.jpg", title:"Page three"},
                         {src:"images/book2/page4.jpg", thumb:"images/book2/thumb4.jpg", title:""},
                         {src:"images/book2/page5.jpg", thumb:"images/book2/thumb5.jpg", title:"Page five"},
@@ -95,13 +96,14 @@
 
                 $(".book-4").flipBook({
                     pages:[
+                        {src:"images/book2/page2.jpg", thumb:"images/book2/thumb2.jpg", title:"Page two"},
                         {
                             src:"images/book2/page-darkbg.jpg", 
                             thumb:"images/book2/thumb1.jpg", 
                             title:"Cover",
                             htmlContent: '<iframe width="770" height="1100" src="videos/D5.mp4" frameborder="0" allowfullscreen></iframe>'
                         },
-                        {src:"images/book2/page2.jpg", thumb:"images/book2/thumb2.jpg", title:"Page two"},
+                        // {src:"images/book2/page2.jpg", thumb:"images/book2/thumb2.jpg", title:"Page two"},
                         {src:"images/book2/page3.jpg", thumb:"images/book2/thumb3.jpg", title:"Page three"},
                         {src:"images/book2/page4.jpg", thumb:"images/book2/thumb4.jpg", title:""},
                         {src:"images/book2/page5.jpg", thumb:"images/book2/thumb5.jpg", title:"Page five"},
@@ -115,13 +117,14 @@
 
                 $(".book-5").flipBook({
                     pages:[
+                        {src:"images/book2/page2.jpg", thumb:"images/book2/thumb2.jpg", title:"Page two"},
                         {
                             src:"images/book2/page-darkbg.jpg", 
                             thumb:"images/book2/thumb1.jpg", 
                             title:"Cover",
                             htmlContent: '<iframe width="770" height="1100" src="videos/E4.mp4" frameborder="0" allowfullscreen></iframe>'
                         },
-                        {src:"images/book2/page2.jpg", thumb:"images/book2/thumb2.jpg", title:"Page two"},
+                        // {src:"images/book2/page2.jpg", thumb:"images/book2/thumb2.jpg", title:"Page two"},
                         {src:"images/book2/page3.jpg", thumb:"images/book2/thumb3.jpg", title:"Page three"},
                         {src:"images/book2/page4.jpg", thumb:"images/book2/thumb4.jpg", title:""},
                         {src:"images/book2/page5.jpg", thumb:"images/book2/thumb5.jpg", title:"Page five"},
@@ -135,13 +138,14 @@
 
                 $(".book-6").flipBook({
                     pages:[
+                        {src:"images/book2/page2.jpg", thumb:"images/book2/thumb2.jpg", title:"Page two"},
                         {
                             src:"images/book2/page-darkbg.jpg", 
                             thumb:"images/book2/thumb1.jpg", 
                             title:"Cover",
                             htmlContent: '<iframe width="770" height="1100" src="videos/F6.mp4" frameborder="0" allowfullscreen></iframe>'
                         },
-                        {src:"images/book2/page2.jpg", thumb:"images/book2/thumb2.jpg", title:"Page two"},
+                        // {src:"images/book2/page2.jpg", thumb:"images/book2/thumb2.jpg", title:"Page two"},
                         {src:"images/book2/page3.jpg", thumb:"images/book2/thumb3.jpg", title:"Page three"},
                         {src:"images/book2/page4.jpg", thumb:"images/book2/thumb4.jpg", title:""},
                         {src:"images/book2/page5.jpg", thumb:"images/book2/thumb5.jpg", title:"Page five"},
@@ -153,20 +157,13 @@
                     lightboxResetOnOpen:true
                 });
 
-                $('body .flipbook-overlay').click(function() {
-                    // location.reload();
-                    // console.log('closed');
-                    //alert("clicked");
-                    window.location.reload();
-                    $('body video').attr('pause','true');
-                });
-
-                $('.flipbook-menuTop').click(function() {
-                    // location.reload();
-                    // console.log('closed');
-                    // alert("clicked");
-                    window.location.reload();
-                });
+                // $('body .flipbook-overlay').click(function() {
+                //     // location.reload();
+                //     // console.log('closed');
+                //     //alert("clicked");
+                //     window.location.reload();
+                //     $('body video').attr('pause','true');
+                // });
             })
         </script>
 
