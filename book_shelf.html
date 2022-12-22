@@ -14,7 +14,7 @@
                     {src: "images/book2/book-images/index.png", thumb: "images/book2/thumb2.jpg", title: "Cover Page",},
                     {
                         src: "images/book2/video-bg.png", thumb: "images/book2/thumb1.jpg", title: "Intro Video",
-                        htmlContent: '<iframe width="1540" height="1000" src="videos/A3.mp4" frameborder="0" allowfullscreen></iframe>'
+                        htmlContent: '<iframe width="1544" height="1000" src="videos/A3.mp4" frameborder="0" allowfullscreen></iframe>'
                     },
                     {
                         src: "images/book2/book-images/full/project_1.jpg",
@@ -52,7 +52,7 @@
                     {src: "images/book2/page2.jpg", thumb: "images/book2/thumb2.jpg", title: "Cover Page",},
                     {
                         src: "images/book2/video-bg.png", thumb: "images/book2/thumb1.jpg", title: "Intro Video",
-                        htmlContent: '<iframe width="1600" height="1000" src="videos/B2.mp4" frameborder="0" allowfullscreen></iframe>'
+                        htmlContent: '<iframe width="1544" height="1000" src="videos/B2.mp4" frameborder="0" allowfullscreen></iframe>'
                     },
                     {src: "images/book2/page3.jpg", thumb: "images/book2/thumb3.jpg", title: "Page One",},
                     {src: "images/book2/page4.jpg", thumb: "images/book2/thumb4.jpg", title: "Page Two",},
@@ -70,7 +70,7 @@
                     {src: "images/book2/page2.jpg", thumb: "images/book2/thumb2.jpg", title: "Cover Page",},
                     {
                         src: "images/book2/video-bg.png", thumb: "images/book2/thumb1.jpg", title: "Intro Video",
-                        htmlContent: '<iframe width="1600" height="1000" src="videos/C1.mp4" frameborder="0" allowfullscreen></iframe>'
+                        htmlContent: '<iframe width="1544" height="1000" src="videos/C1.mp4" frameborder="0" allowfullscreen></iframe>'
                     },
                     {src: "images/book2/page3.jpg", thumb: "images/book2/thumb3.jpg", title: "Page One",},
                     {src: "images/book2/page4.jpg", thumb: "images/book2/thumb4.jpg", title: "Page Two",},
@@ -88,7 +88,7 @@
                     {src: "images/book2/page2.jpg", thumb: "images/book2/thumb2.jpg", title: "Cover Page",},
                     {
                         src: "images/book2/video-bg.png", thumb: "images/book2/thumb1.jpg", title: "Intro Video",
-                        htmlContent: '<iframe width="1600" height="1000" src="videos/D5.mp4" frameborder="0" allowfullscreen></iframe>'
+                        htmlContent: '<iframe width="1544" height="1000" src="videos/D5.mp4" frameborder="0" allowfullscreen></iframe>'
                     },
                     {src: "images/book2/page3.jpg", thumb: "images/book2/thumb3.jpg", title: "Page One",},
                     {src: "images/book2/page4.jpg", thumb: "images/book2/thumb4.jpg", title: "Page Two",},
@@ -106,7 +106,7 @@
                     {src: "images/book2/page2.jpg", thumb: "images/book2/thumb2.jpg", title: "Cover Page"},
                     {
                         src: "images/book2/video-bg.png", thumb: "images/book2/thumb1.jpg", title: "Intro Video",
-                        htmlContent: '<iframe width="1600" height="1000" src="videos/E4.mp4" frameborder="0" allowfullscreen></iframe>'
+                        htmlContent: '<iframe width="1544" height="1000" src="videos/E4.mp4" frameborder="0" allowfullscreen></iframe>'
                     },
                     {src: "images/book2/page3.jpg", thumb: "images/book2/thumb3.jpg", title: "Page One",},
                     {src: "images/book2/page4.jpg", thumb: "images/book2/thumb4.jpg", title: "Page Two",},
@@ -124,7 +124,7 @@
                     {src: "images/book2/page2.jpg", thumb: "images/book2/thumb2.jpg", title: "Cover Page"},
                     {
                         src: "images/book2/video-bg.png", thumb: "images/book2/thumb1.jpg", title: "Intro Video",
-                        htmlContent: '<iframe width="1600" height="1000" src="videos/F6.mp4" frameborder="0" allowfullscreen></iframe>'
+                        htmlContent: '<iframe width="1544" height="1000" src="videos/F6.mp4" frameborder="0" allowfullscreen></iframe>'
                     },
                     {src: "images/book2/page3.jpg", thumb: "images/book2/thumb3.jpg", title: "Page One",},
                     {src: "images/book2/page4.jpg", thumb: "images/book2/thumb4.jpg", title: "Page Two",},
@@ -143,10 +143,11 @@
                 setTimeout(function () {
                     $('[data-name="btnClose"]').click(function () {
                         $('iframe').remove();
-                        location.reload()
+                        alert('test');
+                        location.reload();
+                        alert('test');
                     })
-                }, 3000);
-
+                }, 5000);
             }
         })
     </script>
