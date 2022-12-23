@@ -7,151 +7,38 @@
     <script src="js/flipbook.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
-
-
             $(".book-1").flipBook({
                 pages: [
-                    {src: "images/books/categories/dadan-village/dadan-cover.jpg", thumb: "images/books/thumb2.jpg", title: "Cover Page",},
-                    {
-                        src: "images/books/categories/video-bg.png", thumb: "images/books/thumb1.jpg", title: "Intro Video",
-                        htmlContent: '<iframe width="1544" height="1000" src="videos/A3.mp4" frameborder="0" allowfullscreen></iframe>'
-                    },
-                    {
-                        src: "images/books/categories/dadan-village/dadan-index.png",
-                        thumb: "images/books/thumb3.jpg",
-                        title: "Page index",
-                    },
-                    {
-                        src: "images/books/categories/dadan-village/dadan1.jpg",
-                        thumb: "images/books/thumb5.jpg",
-                        title: "Page 1",
-                    },
-                    {
-                        src: "images/books/categories/dadan-village/dadan2.jpg",
-                        thumb: "images/books/thumb4.jpg",
-                        title: "Page 2",
-                    },
-                    {
-                        src: "images/books/categories/dadan-village/dadan3.jpg",
-                        thumb: "images/books/thumb5.jpg",
-                        title: "Page 3",
-                    },
-                    {
-                        src: "images/books/categories/dadan-village/dadan4.jpg",
-                        thumb: "images/books/thumb5.jpg",
-                        title: "Page 4",
-                    },
-                    {
-                        src: "images/books/categories/dadan-village/dadan5.jpg",
-                        thumb: "images/books/thumb5.jpg",
-                        title: "Page 5",
-                    },
-                    {
-                        src: "images/books/categories/dadan-village/dadan6.jpg",
-                        thumb: "images/books/thumb5.jpg",
-                        title: "Page 6",
-                    },
-                    {
-                        src: "images/books/categories/dadan-village/dadan7.jpg",
-                        thumb: "images/books/thumb5.jpg",
-                        title: "Page 7",
-                    },
-                    {
-                        src: "images/books/categories/dadan-village/dadan8.jpg",
-                        thumb: "images/books/thumb5.jpg",
-                        title: "Page 8",
-                    },
-                    {
-                        src: "images/books/categories/dadan-village/dadan9.jpg",
-                        thumb: "images/books/thumb5.jpg",
-                        title: "Page 9",
-                    },
-                    {
-                        src: "images/books/categories/dadan-village/dadan10.jpg",
-                        thumb: "images/books/thumb5.jpg",
-                        title: "Page 10",
-                    },
-                    {
-                        src: "images/books/categories/dadan-village/dadan11.jpg",
-                        thumb: "images/books/thumb5.jpg",
-                        title: "Page 11",
-                    },
-                    {
-                        src: "images/books/categories/dadan-village/dadan12.jpg",
-                        thumb: "images/books/thumb5.jpg",
-                        title: "Page 12",
-                    },
-                    {
-                        src: "images/books/categories/dadan-village/dadan13.jpg",
-                        thumb: "images/books/thumb5.jpg",
-                        title: "Page 13",
-                    },
-                    {
-                        src: "images/books/categories/dadan-village/dadan14.jpg",
-                        thumb: "images/books/thumb5.jpg",
-                        title: "Page 14",
-                    },
-                    {
-                        src: "images/books/categories/dadan-village/dadan15.jpg",
-                        thumb: "images/books/thumb5.jpg",
-                        title: "Page 15",
-                    },
-                    {
-                        src: "images/books/categories/dadan-village/dadan16.jpg",
-                        thumb: "images/books/thumb5.jpg",
-                        title: "Page 16",
-                    },
-                    {
-                        src: "images/books/categories/dadan-village/dadan17.jpg",
-                        thumb: "images/books/thumb5.jpg",
-                        title: "Page 17",
-                    },
-                    {
-                        src: "images/books/categories/dadan-village/dadan18.jpg",
-                        thumb: "images/books/thumb5.jpg",
-                        title: "Page 18",
-                    },
-                    {
-                        src: "images/books/categories/dadan-village/dadan19.jpg",
-                        thumb: "images/books/thumb5.jpg",
-                        title: "Page 19",
-                    },
-                    {
-                        src: "images/books/categories/dadan-village/dadan20.jpg",
-                        thumb: "images/books/thumb5.jpg",
-                        title: "Page 20",
-                    },
-                    {
-                        src: "images/books/categories/dadan-village/dadan21.jpg",
-                        thumb: "images/books/thumb5.jpg",
-                        title: "Page 21",
-                    },
-                    {
-                        src: "images/books/categories/dadan-village/dadan22.jpg",
-                        thumb: "images/books/thumb5.jpg",
-                        title: "Page 22",
-                    },
-                    {
-                        src: "images/books/categories/dadan-village/dadan23.jpg",
-                        thumb: "images/books/thumb5.jpg",
-                        title: "Page 23",
-                    },
-                    {
-                        src: "images/books/categories/dadan-village/dadan24.jpg",
-                        thumb: "images/books/thumb5.jpg",
-                        title: "Page 24",
-                    },
-                    {
-                        src: "images/books/categories/dadan-village/dadan25.jpg",
-                        thumb: "images/books/thumb5.jpg",
-                        title: "Page 25",
-                    },
-                    {
-                        src: "images/books/categories/dadan-village/dadan26.jpg",
-                        thumb: "images/books/thumb5.jpg",
-                        title: "Page 26",
-                    },
-                    {src: "images/books/categories/page-darkbg.jpg", thumb: "images/books/thumb8.jpg", title: "Last"}
+                    { src: "books/dadan-village/cover.jpg", title: "Cover Page", },
+                    { src: "books/video-bg.png", title: "Intro Video", htmlContent: '<iframe width="1544" height="1000" src="books/dadan-village/intro.mp4" frameborder="0" allowfullscreen></iframe>' },
+                    { src: "books/dadan-village/index.jpg", title: "Page index", },
+                    { src: "books/dadan-village/dadan1.jpg", title: "Page 1", },
+                    { src: "books/dadan-village/dadan2.jpg", title: "Page 2", },
+                    { src: "books/dadan-village/dadan3.jpg", title: "Page 3", },
+                    { src: "books/dadan-village/dadan4.jpg", title: "Page 4", },
+                    { src: "books/dadan-village/dadan5.jpg", title: "Page 5", },
+                    { src: "books/dadan-village/dadan6.jpg", title: "Page 6", },
+                    { src: "books/dadan-village/dadan7.jpg", title: "Page 7", },
+                    { src: "books/dadan-village/dadan8.jpg", title: "Page 8", },
+                    { src: "books/dadan-village/dadan9.jpg", title: "Page 9", },
+                    { src: "books/dadan-village/dadan10.jpg", title: "Page 10", },
+                    { src: "books/dadan-village/dadan11.jpg", title: "Page 11", },
+                    { src: "books/dadan-village/dadan12.jpg", title: "Page 12", },
+                    { src: "books/dadan-village/dadan13.jpg", title: "Page 13", },
+                    { src: "books/dadan-village/dadan14.jpg", title: "Page 14", },
+                    { src: "books/dadan-village/dadan15.jpg", title: "Page 15", },
+                    { src: "books/dadan-village/dadan16.jpg", title: "Page 16", },
+                    { src: "books/dadan-village/dadan17.jpg", title: "Page 17", },
+                    { src: "books/dadan-village/dadan18.jpg", title: "Page 18", },
+                    { src: "books/dadan-village/dadan19.jpg", title: "Page 19", },
+                    { src: "books/dadan-village/dadan20.jpg", title: "Page 20", },
+                    { src: "books/dadan-village/dadan21.jpg", title: "Page 21", },
+                    { src: "books/dadan-village/dadan22.jpg", title: "Page 22", },
+                    { src: "books/dadan-village/dadan23.jpg", title: "Page 23", },
+                    { src: "books/dadan-village/dadan24.jpg", title: "Page 24", },
+                    { src: "books/dadan-village/dadan25.jpg", title: "Page 25", },
+                    { src: "books/dadan-village/dadan26.jpg", title: "Page 26", },
+                    { src: "books/page-darkbg.jpg", title: "Last" }
                 ],
                 lightBox: true,
                 lightboxResetOnOpen: true
@@ -159,102 +46,28 @@
 
             $(".book-2").flipBook({
                 pages: [
-                    {src: "images/books/categories/page-darkbg.jpg", thumb: "images/books/thumb2.jpg", title: "Cover Page",},
-                    {
-                        src: "images/books/categories/video-bg.png", thumb: "images/books/thumb1.jpg", title: "Intro Video",
-                        htmlContent: '<iframe width="1544" height="1000" src="videos/B2.mp4" frameborder="0" allowfullscreen></iframe>'
-                    },
-                    {
-                        src: "images/books/categories/alula-central/alula1.jpg", 
-                        thumb: "images/books/thumb3.jpg", 
-                        title: "Page 1",
-                    },
-                    {
-                        src: "images/books/categories/alula-central/alula2.jpg", 
-                        thumb: "images/books/thumb4.jpg", 
-                        title: "Page 2",
-                    },
-                    {
-                        src: "images/books/categories/alula-central/alula3.jpg", 
-                        thumb: "images/books/thumb5.jpg", 
-                        title: "Page 3",
-                    },
-                    {
-                        src: "images/books/categories/alula-central/alula4.jpg", 
-                        thumb: "images/books/thumb6.jpg", 
-                        title: "Page 4",
-                    },
-                    {
-                        src: "images/books/categories/alula-central/alula5.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 5",
-                    },
-                    {
-                        src: "images/books/categories/alula-central/alula6.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 6",
-                    },
-                    {
-                        src: "images/books/categories/alula-central/alula7.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 7",
-                    },
-                    {
-                        src: "images/books/categories/alula-central/alula8.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 8",
-                    },
-                    {
-                        src: "images/books/categories/alula-central/alula9.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 9",
-                    },
-                    {
-                        src: "images/books/categories/alula-central/alula10.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 10",
-                    },
-                    {
-                        src: "images/books/categories/alula-central/alula11.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 11",
-                    },
-                    {
-                        src: "images/books/categories/alula-central/alula12.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 12",
-                    },
-                    {
-                        src: "images/books/categories/alula-central/alula13.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 13",
-                    },
-                    {
-                        src: "images/books/categories/alula-central/alula14.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 14",
-                    },
-                    {
-                        src: "images/books/categories/alula-central/alula15.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 15",
-                    },
-                    {
-                        src: "images/books/categories/alula-central/alula16.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 16",
-                    },
-                    {
-                        src: "images/books/categories/alula-central/alula17.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 17",
-                    },
-                    {
-                        src: "images/books/categories/alula-central/alula18.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 18",
-                    },
-                    {src: "images/books/categories/page-darkbg.jpg", thumb: "images/books/thumb8.jpg", title: "Last"}
+                    { src: "books/alula-central/cover.jpg", title: "Cover Page", },
+                    { src: "books/video-bg.png", title: "Intro Video", htmlContent: '<iframe width="1544" height="1000" src="books/alula-central/intro.mp4" frameborder="0" allowfullscreen></iframe>' },
+                    { src: "books/alula-central/index.jpg", title: "Page index", },
+                    { src: "books/alula-central/alula1.jpg", title: "Page 1", },
+                    { src: "books/alula-central/alula2.jpg", title: "Page 2", },
+                    { src: "books/alula-central/alula3.jpg", title: "Page 3", },
+                    { src: "books/alula-central/alula4.jpg", title: "Page 4", },
+                    { src: "books/alula-central/alula5.jpg", title: "Page 5", },
+                    { src: "books/alula-central/alula6.jpg", title: "Page 6", },
+                    { src: "books/alula-central/alula7.jpg", title: "Page 7", },
+                    { src: "books/alula-central/alula8.jpg", title: "Page 8", },
+                    { src: "books/alula-central/alula9.jpg", title: "Page 9", },
+                    { src: "books/alula-central/alula10.jpg", title: "Page 10", },
+                    { src: "books/alula-central/alula11.jpg", title: "Page 11", },
+                    { src: "books/alula-central/alula12.jpg", title: "Page 12", },
+                    { src: "books/alula-central/alula13.jpg", title: "Page 13", },
+                    { src: "books/alula-central/alula14.jpg", title: "Page 14", },
+                    { src: "books/alula-central/alula15.jpg", title: "Page 15", },
+                    { src: "books/alula-central/alula16.jpg", title: "Page 16", },
+                    { src: "books/alula-central/alula17.jpg", title: "Page 17", },
+                    { src: "books/alula-central/alula18.jpg", title: "Page 18", },
+                    { src: "books/page-darkbg.jpg", title: "Last" }
                 ],
                 lightBox: true,
                 lightboxResetOnOpen: true
@@ -262,262 +75,60 @@
 
             $(".book-3").flipBook({
                 pages: [
-                    {src: "images/books/categories/page-darkbg.jpg", thumb: "images/books/thumb2.jpg", title: "Cover Page",},
-                    {
-                        src: "images/books/categories/video-bg.png", thumb: "images/books/thumb1.jpg", title: "Intro Video",
-                        htmlContent: '<iframe width="1544" height="1000" src="videos/C1.mp4" frameborder="0" allowfullscreen></iframe>'
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis1.jpg", 
-                        thumb: "images/books/thumb3.jpg", 
-                        title: "Page 1",
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis2.jpg", 
-                        thumb: "images/books/thumb4.jpg", 
-                        title: "Page 2",
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis4.jpg", 
-                        thumb: "images/books/thumb5.jpg", 
-                        title: "Page 4",
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis5.jpg", 
-                        thumb: "images/books/thumb6.jpg", 
-                        title: "Page 5",
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis6.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 6",
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis7.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 7",
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis8.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 8",
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis9.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 9",
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis10.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 10",
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis11.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 11",
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis12.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 12",
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis13.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 13",
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis14.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 14",
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis15.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 15",
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis16.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 16",
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis17.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 17",
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis18.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 18",
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis19.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 19",
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis20.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 20",
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis21.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 21",
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis22.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 22",
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis23.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 23",
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis24.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 24",
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis25.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 25",
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis26.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 26",
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis27.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 27",
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis28.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 28",
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis29.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 29",
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis30.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 30",
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis31.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 31",
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis32.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 32",
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis33.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 33",
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis34.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 34",
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis35.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 35",
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis36.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 36",
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis37.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 37",
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis38.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 38",
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis39.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 39",
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis40.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 40",
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis41.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 41",
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis42.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 42",
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis43.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 43",
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis44.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 44",
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis45.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 45",
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis46.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 46",
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis47.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 47",
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis48.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 48",
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis49.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 49",
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis50.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 50",
-                    },
-                    {
-                        src: "images/books/categories/oasis-farms/oasis51.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 51",
-                    },
-                    {src: "images/books/categories/page-darkbg.jpg", thumb: "images/books/thumb8.jpg", title: "Last"}
+                    { src: "books/oasis-farms/cover.jpg", title: "Cover Page", },
+                    { src: "books/video-bg.png", title: "Intro Video", htmlContent: '<iframe width="1544" height="1000" src="books/oasis-farms/intro.mp4" frameborder="0" allowfullscreen></iframe>' },
+                    { src: "books/oasis-farms/index.jpg", title: "Page index", },
+                    { src: "books/oasis-farms/oasis1.jpg", title: "Page 1", },
+                    { src: "books/oasis-farms/oasis2.jpg", title: "Page 2", },
+                    { src: "books/oasis-farms/oasis4.jpg", title: "Page 4", },
+                    { src: "books/oasis-farms/oasis5.jpg", title: "Page 5", },
+                    { src: "books/oasis-farms/oasis6.jpg", title: "Page 6", },
+                    { src: "books/oasis-farms/oasis7.jpg", title: "Page 7", },
+                    { src: "books/oasis-farms/oasis8.jpg", title: "Page 8", },
+                    { src: "books/oasis-farms/oasis9.jpg", title: "Page 9", },
+                    { src: "books/oasis-farms/oasis10.jpg", title: "Page 10", },
+                    { src: "books/oasis-farms/oasis11.jpg", title: "Page 11", },
+                    { src: "books/oasis-farms/oasis12.jpg", title: "Page 12", },
+                    { src: "books/oasis-farms/oasis13.jpg", title: "Page 13", },
+                    { src: "books/oasis-farms/oasis14.jpg", title: "Page 14", },
+                    { src: "books/oasis-farms/oasis15.jpg", title: "Page 15", },
+                    { src: "books/oasis-farms/oasis16.jpg", title: "Page 16", },
+                    { src: "books/oasis-farms/oasis17.jpg", title: "Page 17", },
+                    { src: "books/oasis-farms/oasis18.jpg", title: "Page 18", },
+                    { src: "books/oasis-farms/oasis19.jpg", title: "Page 19", },
+                    { src: "books/oasis-farms/oasis20.jpg", title: "Page 20", },
+                    { src: "books/oasis-farms/oasis21.jpg", title: "Page 21", },
+                    { src: "books/oasis-farms/oasis22.jpg", title: "Page 22", },
+                    { src: "books/oasis-farms/oasis23.jpg", title: "Page 23", },
+                    { src: "books/oasis-farms/oasis24.jpg", title: "Page 24", },
+                    { src: "books/oasis-farms/oasis25.jpg", title: "Page 25", },
+                    { src: "books/oasis-farms/oasis26.jpg", title: "Page 26", },
+                    { src: "books/oasis-farms/oasis27.jpg", title: "Page 27", },
+                    { src: "books/oasis-farms/oasis28.jpg", title: "Page 28", },
+                    { src: "books/oasis-farms/oasis29.jpg", title: "Page 29", },
+                    { src: "books/oasis-farms/oasis30.jpg", title: "Page 30", },
+                    { src: "books/oasis-farms/oasis31.jpg", title: "Page 31", },
+                    { src: "books/oasis-farms/oasis32.jpg", title: "Page 32", },
+                    { src: "books/oasis-farms/oasis33.jpg", title: "Page 33", },
+                    { src: "books/oasis-farms/oasis34.jpg", title: "Page 34", },
+                    { src: "books/oasis-farms/oasis35.jpg", title: "Page 35", },
+                    { src: "books/oasis-farms/oasis36.jpg", title: "Page 36", },
+                    { src: "books/oasis-farms/oasis37.jpg", title: "Page 37", },
+                    { src: "books/oasis-farms/oasis38.jpg", title: "Page 38", },
+                    { src: "books/oasis-farms/oasis39.jpg", title: "Page 39", },
+                    { src: "books/oasis-farms/oasis40.jpg", title: "Page 40", },
+                    { src: "books/oasis-farms/oasis41.jpg", title: "Page 41", },
+                    { src: "books/oasis-farms/oasis42.jpg", title: "Page 42", },
+                    { src: "books/oasis-farms/oasis43.jpg", title: "Page 43", },
+                    { src: "books/oasis-farms/oasis44.jpg", title: "Page 44", },
+                    { src: "books/oasis-farms/oasis45.jpg", title: "Page 45", },
+                    { src: "books/oasis-farms/oasis46.jpg", title: "Page 46", },
+                    { src: "books/oasis-farms/oasis47.jpg", title: "Page 47", },
+                    { src: "books/oasis-farms/oasis48.jpg", title: "Page 48", },
+                    { src: "books/oasis-farms/oasis49.jpg", title: "Page 49", },
+                    { src: "books/oasis-farms/oasis50.jpg", title: "Page 50", },
+                    { src: "books/oasis-farms/oasis51.jpg", title: "Page 51", },
+                    { src: "books/page-darkbg.jpg", title: "Last" }
                 ],
                 lightBox: true,
                 lightboxResetOnOpen: true
@@ -525,82 +136,24 @@
 
             $(".book-4").flipBook({
                 pages: [
-                    {src: "images/books/categories/page-darkbg.jpg", thumb: "images/books/thumb2.jpg", title: "Cover Page",},
-                    {
-                        src: "images/books/categories/video-bg.png", thumb: "images/books/thumb1.jpg", title: "Intro Video",
-                        htmlContent: '<iframe width="1544" height="1000" src="videos/D5.mp4" frameborder="0" allowfullscreen></iframe>'
-                    },
-                    {
-                        src: "images/books/categories/nabatean-village/naba-village1.jpg", 
-                        thumb: "images/books/thumb3.jpg", 
-                        title: "Page 1",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-village/naba-village2.jpg", 
-                        thumb: "images/books/thumb4.jpg", 
-                        title: "Page 2",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-village/naba-village3.jpg", 
-                        thumb: "images/books/thumb5.jpg", 
-                        title: "Page 3",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-village/naba-village4.jpg", 
-                        thumb: "images/books/thumb6.jpg", 
-                        title: "Page 4",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-village/naba-village5.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 5",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-village/naba-village6.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 6",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-village/naba-village7.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 7",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-village/naba-village8.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 8",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-village/naba-village9.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 9",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-village/naba-village10.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 10",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-village/naba-village11.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 11",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-village/naba-village12.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 12",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-village/naba-village13.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 13",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-village/naba-village14.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 14",
-                    },
-                    {src: "images/books/categories/page-darkbg.jpg", thumb: "images/books/thumb8.jpg", title: "Last"}
+                    { src: "books/nabatean-village/cover.jpg", title: "Cover Page", },
+                    { src: "books/video-bg.png", title: "Intro Video", htmlContent: '<iframe width="1544" height="1000" src="books/nabatean-village/intro.mp4" frameborder="0" allowfullscreen></iframe>' },
+                    { src: "books/nabatean-village/index.jpg", title: "Page index", },
+                    { src: "books/nabatean-village/naba-village1.jpg", title: "Page 1", },
+                    { src: "books/nabatean-village/naba-village2.jpg", title: "Page 2", },
+                    { src: "books/nabatean-village/naba-village3.jpg", title: "Page 3", },
+                    { src: "books/nabatean-village/naba-village4.jpg", title: "Page 4", },
+                    { src: "books/nabatean-village/naba-village5.jpg", title: "Page 5", },
+                    { src: "books/nabatean-village/naba-village6.jpg", title: "Page 6", },
+                    { src: "books/nabatean-village/naba-village7.jpg", title: "Page 7", },
+                    { src: "books/nabatean-village/naba-village8.jpg", title: "Page 8", },
+                    { src: "books/nabatean-village/naba-village9.jpg", title: "Page 9", },
+                    { src: "books/nabatean-village/naba-village10.jpg", title: "Page 10", },
+                    { src: "books/nabatean-village/naba-village11.jpg", title: "Page 11", },
+                    { src: "books/nabatean-village/naba-village12.jpg", title: "Page 12", },
+                    { src: "books/nabatean-village/naba-village13.jpg", title: "Page 13", },
+                    { src: "books/nabatean-village/naba-village14.jpg", title: "Page 14", },
+                    { src: "books/page-darkbg.jpg", title: "Last" }
                 ],
                 lightBox: true,
                 lightboxResetOnOpen: true
@@ -608,322 +161,72 @@
 
             $(".book-5").flipBook({
                 pages: [
-                    {src: "images/books/categories/page-darkbg.jpg", thumb: "images/books/thumb2.jpg", title: "Cover Page"},
-                    {
-                        src: "images/books/categories/video-bg.png", thumb: "images/books/thumb1.jpg", title: "Intro Video",
-                        htmlContent: '<iframe width="1544" height="1000" src="videos/E4.mp4" frameborder="0" allowfullscreen></iframe>'
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms1.jpg", 
-                        thumb: "images/books/thumb3.jpg", 
-                        title: "Page 1",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms2.jpg", 
-                        thumb: "images/books/thumb4.jpg", 
-                        title: "Page 2",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms3.jpg", 
-                        thumb: "images/books/thumb5.jpg", 
-                        title: "Page 3",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms4.jpg", 
-                        thumb: "images/books/thumb6.jpg", 
-                        title: "Page 4",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms5.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 5",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms6.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 6",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms7.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 7",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms8.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 8",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms9.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 9",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms10.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 10",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms11.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 11",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms12.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 12",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms13.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 13",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms14.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 14",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms15.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 15",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms16.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 16",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms17.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 17",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms18.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 18",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms19.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 19",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms20.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 20",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms21.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 21",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms22.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 22",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms23.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 23",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms24.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 24",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms25.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 25",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms26.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 26",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms27.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 27",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms28.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 28",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms29.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 29",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms30.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 30",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms31.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 31",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms32.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 32",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms33.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 33",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms34.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 34",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms35.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 35",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms36.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 36",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms37.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 37",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms38.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 38",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms39.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 39",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms40.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 40",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms41.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 41",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms42.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 42",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms43.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 43",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms44.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 44",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms45.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 45",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms46.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 46",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms47.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 47",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms48.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 48",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms49.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 49",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms50.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 50",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms51.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 51",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms52.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 52",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms53.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 53",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms54.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 54",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms55.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 55",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms56.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 56",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms57.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 57",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms58.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 58",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms59.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 59",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms60.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 60",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms61.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 61",
-                    },
-                    {
-                        src: "images/books/categories/nabatean-farms/naba-farms62.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 62",
-                    },
-                    {src: "images/books/categories/page-darkbg.jpg", thumb: "images/books/thumb8.jpg", title: "Last"}
+                    { src: "books/nabatean-farms/cover.jpg", title: "Cover Page", },
+                    { src: "books/video-bg.png", title: "Intro Video", htmlContent: '<iframe width="1544" height="1000" src="books/nabatean-farms/intro.mp4" frameborder="0" allowfullscreen></iframe>' },
+                    { src: "books/nabatean-farms/index.jpg", title: "Page index", },
+                    { src: "books/nabatean-farms/naba-farms1.jpg", title: "Page 1", },
+                    { src: "books/nabatean-farms/naba-farms2.jpg", title: "Page 2", },
+                    { src: "books/nabatean-farms/naba-farms3.jpg", title: "Page 3", },
+                    { src: "books/nabatean-farms/naba-farms4.jpg", title: "Page 4", },
+                    { src: "books/nabatean-farms/naba-farms5.jpg", title: "Page 5", },
+                    { src: "books/nabatean-farms/naba-farms6.jpg", title: "Page 6", },
+                    { src: "books/nabatean-farms/naba-farms7.jpg", title: "Page 7", },
+                    { src: "books/nabatean-farms/naba-farms8.jpg", title: "Page 8", },
+                    { src: "books/nabatean-farms/naba-farms9.jpg", title: "Page 9", },
+                    { src: "books/nabatean-farms/naba-farms10.jpg", title: "Page 10", },
+                    { src: "books/nabatean-farms/naba-farms11.jpg", title: "Page 11", },
+                    { src: "books/nabatean-farms/naba-farms12.jpg", title: "Page 12", },
+                    { src: "books/nabatean-farms/naba-farms13.jpg", title: "Page 13", },
+                    { src: "books/nabatean-farms/naba-farms14.jpg", title: "Page 14", },
+                    { src: "books/nabatean-farms/naba-farms15.jpg", title: "Page 15", },
+                    { src: "books/nabatean-farms/naba-farms16.jpg", title: "Page 16", },
+                    { src: "books/nabatean-farms/naba-farms17.jpg", title: "Page 17", },
+                    { src: "books/nabatean-farms/naba-farms18.jpg", title: "Page 18", },
+                    { src: "books/nabatean-farms/naba-farms19.jpg", title: "Page 19", },
+                    { src: "books/nabatean-farms/naba-farms20.jpg", title: "Page 20", },
+                    { src: "books/nabatean-farms/naba-farms21.jpg", title: "Page 21", },
+                    { src: "books/nabatean-farms/naba-farms22.jpg", title: "Page 22", },
+                    { src: "books/nabatean-farms/naba-farms23.jpg", title: "Page 23", },
+                    { src: "books/nabatean-farms/naba-farms24.jpg", title: "Page 24", },
+                    { src: "books/nabatean-farms/naba-farms25.jpg", title: "Page 25", },
+                    { src: "books/nabatean-farms/naba-farms26.jpg", title: "Page 26", },
+                    { src: "books/nabatean-farms/naba-farms27.jpg", title: "Page 27", },
+                    { src: "books/nabatean-farms/naba-farms28.jpg", title: "Page 28", },
+                    { src: "books/nabatean-farms/naba-farms29.jpg", title: "Page 29", },
+                    { src: "books/nabatean-farms/naba-farms30.jpg", title: "Page 30", },
+                    { src: "books/nabatean-farms/naba-farms31.jpg", title: "Page 31", },
+                    { src: "books/nabatean-farms/naba-farms32.jpg", title: "Page 32", },
+                    { src: "books/nabatean-farms/naba-farms33.jpg", title: "Page 33", },
+                    { src: "books/nabatean-farms/naba-farms34.jpg", title: "Page 34", },
+                    { src: "books/nabatean-farms/naba-farms35.jpg", title: "Page 35", },
+                    { src: "books/nabatean-farms/naba-farms36.jpg", title: "Page 36", },
+                    { src: "books/nabatean-farms/naba-farms37.jpg", title: "Page 37", },
+                    { src: "books/nabatean-farms/naba-farms38.jpg", title: "Page 38", },
+                    { src: "books/nabatean-farms/naba-farms39.jpg", title: "Page 39", },
+                    { src: "books/nabatean-farms/naba-farms40.jpg", title: "Page 40", },
+                    { src: "books/nabatean-farms/naba-farms41.jpg", title: "Page 41", },
+                    { src: "books/nabatean-farms/naba-farms42.jpg", title: "Page 42", },
+                    { src: "books/nabatean-farms/naba-farms43.jpg", title: "Page 43", },
+                    { src: "books/nabatean-farms/naba-farms44.jpg", title: "Page 44", },
+                    { src: "books/nabatean-farms/naba-farms45.jpg", title: "Page 45", },
+                    { src: "books/nabatean-farms/naba-farms46.jpg", title: "Page 46", },
+                    { src: "books/nabatean-farms/naba-farms47.jpg", title: "Page 47", },
+                    { src: "books/nabatean-farms/naba-farms48.jpg", title: "Page 48", },
+                    { src: "books/nabatean-farms/naba-farms49.jpg", title: "Page 49", },
+                    { src: "books/nabatean-farms/naba-farms50.jpg", title: "Page 50", },
+                    { src: "books/nabatean-farms/naba-farms51.jpg", title: "Page 51", },
+                    { src: "books/nabatean-farms/naba-farms52.jpg", title: "Page 52", },
+                    { src: "books/nabatean-farms/naba-farms53.jpg", title: "Page 53", },
+                    { src: "books/nabatean-farms/naba-farms54.jpg", title: "Page 54", },
+                    { src: "books/nabatean-farms/naba-farms55.jpg", title: "Page 55", },
+                    { src: "books/nabatean-farms/naba-farms56.jpg", title: "Page 56", },
+                    { src: "books/nabatean-farms/naba-farms57.jpg", title: "Page 57", },
+                    { src: "books/nabatean-farms/naba-farms58.jpg", title: "Page 58", },
+                    { src: "books/nabatean-farms/naba-farms59.jpg", title: "Page 59", },
+                    { src: "books/nabatean-farms/naba-farms60.jpg", title: "Page 60", },
+                    { src: "books/nabatean-farms/naba-farms61.jpg", title: "Page 61", },
+                    { src: "books/nabatean-farms/naba-farms62.jpg", title: "Page 62", },
+                    { src: "books/page-darkbg.jpg", title: "Last" }
                 ],
                 lightBox: true,
                 lightboxResetOnOpen: true
@@ -931,162 +234,40 @@
 
             $(".book-6").flipBook({
                 pages: [
-                    {src: "images/books/categories/page-darkbg.jpg", thumb: "images/books/thumb2.jpg", title: "Cover Page"},
-                    {
-                        src: "images/books/categories/video-bg.png", thumb: "images/books/thumb1.jpg", title: "Intro Video",
-                        htmlContent: '<iframe width="1544" height="1000" src="videos/F6.mp4" frameborder="0" allowfullscreen></iframe>'
-                    },
-                    {
-                        src: "images/books/categories/aljadidah-village/aljadidah1.jpg", 
-                        thumb: "images/books/thumb3.jpg", 
-                        title: "Page 1",
-                    },
-                    {
-                        src: "images/books/categories/aljadidah-village/aljadidah2.jpg", 
-                        thumb: "images/books/thumb4.jpg", 
-                        title: "Page 2",
-                    },
-                    {
-                        src: "images/books/categories/aljadidah-village/aljadidah3.jpg", 
-                        thumb: "images/books/thumb5.jpg", 
-                        title: "Page 3",
-                    },
-                    {
-                        src: "images/books/categories/aljadidah-village/aljadidah4.jpg", 
-                        thumb: "images/books/thumb6.jpg", 
-                        title: "Page 4",
-                    },
-                    {
-                        src: "images/books/categories/aljadidah-village/aljadidah5.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 5",
-                    },
-                    {
-                        src: "images/books/categories/aljadidah-village/aljadidah6.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 6",
-                    },
-                    {
-                        src: "images/books/categories/aljadidah-village/aljadidah7.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 7",
-                    },
-                    {
-                        src: "images/books/categories/aljadidah-village/aljadidah8.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 8",
-                    },
-                    {
-                        src: "images/books/categories/aljadidah-village/aljadidah9.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 9",
-                    },
-                    {
-                        src: "images/books/categories/aljadidah-village/aljadidah10.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 10",
-                    },
-                    {
-                        src: "images/books/categories/aljadidah-village/aljadidah11.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 11",
-                    },
-                    {
-                        src: "images/books/categories/aljadidah-village/aljadidah12.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 12",
-                    },
-                    {
-                        src: "images/books/categories/aljadidah-village/aljadidah13.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 13",
-                    },
-                    {
-                        src: "images/books/categories/aljadidah-village/aljadidah14.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 14",
-                    },
-                    {
-                        src: "images/books/categories/aljadidah-village/aljadidah15.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 15",
-                    },
-                    {
-                        src: "images/books/categories/aljadidah-village/aljadidah16.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 16",
-                    },
-                    {
-                        src: "images/books/categories/aljadidah-village/aljadidah17.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 17",
-                    },
-                    {
-                        src: "images/books/categories/aljadidah-village/aljadidah18.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 18",
-                    },
-                    {
-                        src: "images/books/categories/aljadidah-village/aljadidah19.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 19",
-                    },
-                    {
-                        src: "images/books/categories/aljadidah-village/aljadidah20.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 20",
-                    },
-                    {
-                        src: "images/books/categories/aljadidah-village/aljadidah21.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 21",
-                    },
-                    {
-                        src: "images/books/categories/aljadidah-village/aljadidah22.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 22",
-                    },
-                    {
-                        src: "images/books/categories/aljadidah-village/aljadidah23.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 23",
-                    },
-                    {
-                        src: "images/books/categories/aljadidah-village/aljadidah24.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 24",
-                    },
-                    {
-                        src: "images/books/categories/aljadidah-village/aljadidah25.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 25",
-                    },
-                    {
-                        src: "images/books/categories/aljadidah-village/aljadidah26.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 26",
-                    },
-                    {
-                        src: "images/books/categories/aljadidah-village/aljadidah27.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 27",
-                    },
-                    {
-                        src: "images/books/categories/aljadidah-village/aljadidah28.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 28",
-                    },
-                    {
-                        src: "images/books/categories/aljadidah-village/aljadidah29.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 29",
-                    },
-                    {
-                        src: "images/books/categories/aljadidah-village/aljadidah30.jpg", 
-                        thumb: "images/books/thumb7.jpg", 
-                        title: "Page 30",
-                    },
-                    {src: "images/books/categories/page-darkbg.jpg", thumb: "images/books/thumb8.jpg", title: "Last"}
+                    { src: "books/aljadidah-village/cover.jpg", title: "Cover Page", },
+                    { src: "books/video-bg.png", title: "Intro Video", htmlContent: '<iframe width="1544" height="1000" src="books/aljadidah-village/intro.mp4" frameborder="0" allowfullscreen></iframe>' },
+                    { src: "books/aljadidah-village/index.jpg", title: "Page index", },
+                    { src: "books/aljadidah-village/aljadidah1.jpg", title: "Page 1", },
+                    { src: "books/aljadidah-village/aljadidah2.jpg", title: "Page 2", },
+                    { src: "books/aljadidah-village/aljadidah3.jpg", title: "Page 3", },
+                    { src: "books/aljadidah-village/aljadidah4.jpg", title: "Page 4", },
+                    { src: "books/aljadidah-village/aljadidah5.jpg", title: "Page 5", },
+                    { src: "books/aljadidah-village/aljadidah6.jpg", title: "Page 6", },
+                    { src: "books/aljadidah-village/aljadidah7.jpg", title: "Page 7", },
+                    { src: "books/aljadidah-village/aljadidah8.jpg", title: "Page 8", },
+                    { src: "books/aljadidah-village/aljadidah9.jpg", title: "Page 9", },
+                    { src: "books/aljadidah-village/aljadidah10.jpg", title: "Page 10", },
+                    { src: "books/aljadidah-village/aljadidah11.jpg", title: "Page 11", },
+                    { src: "books/aljadidah-village/aljadidah12.jpg", title: "Page 12", },
+                    { src: "books/aljadidah-village/aljadidah13.jpg", title: "Page 13", },
+                    { src: "books/aljadidah-village/aljadidah14.jpg", title: "Page 14", },
+                    { src: "books/aljadidah-village/aljadidah15.jpg", title: "Page 15", },
+                    { src: "books/aljadidah-village/aljadidah16.jpg", title: "Page 16", },
+                    { src: "books/aljadidah-village/aljadidah17.jpg", title: "Page 17", },
+                    { src: "books/aljadidah-village/aljadidah18.jpg", title: "Page 18", },
+                    { src: "books/aljadidah-village/aljadidah19.jpg", title: "Page 19", },
+                    { src: "books/aljadidah-village/aljadidah20.jpg", title: "Page 20", },
+                    { src: "books/aljadidah-village/aljadidah21.jpg", title: "Page 21", },
+                    { src: "books/aljadidah-village/aljadidah22.jpg", title: "Page 22", },
+                    { src: "books/aljadidah-village/aljadidah23.jpg", title: "Page 23", },
+                    { src: "books/aljadidah-village/aljadidah24.jpg", title: "Page 24", },
+                    { src: "books/aljadidah-village/aljadidah25.jpg", title: "Page 25", },
+                    { src: "books/aljadidah-village/aljadidah26.jpg", title: "Page 26", },
+                    { src: "books/aljadidah-village/aljadidah27.jpg", title: "Page 27", },
+                    { src: "books/aljadidah-village/aljadidah28.jpg", title: "Page 28", },
+                    { src: "books/aljadidah-village/aljadidah29.jpg", title: "Page 29", },
+                    { src: "books/aljadidah-village/aljadidah30.jpg", title: "Page 30", },
+                    { src: "books/page-darkbg.jpg", title: "Last" }
                 ],
                 lightBox: true,
                 lightboxResetOnOpen: true
@@ -1209,37 +390,37 @@
     <div class="covers">
         <div class="thumb" onclick="closeModal('book-1')">
             <div class="thumbnail">
-                <img src="images/shelf-thumbs/dadan.png" alt="">
+                <img src="images/icons/dadan.png" alt="">
             </div>
             <h2>DADAN VILLAGE</h2>
         </div>
         <div class="thumb" onclick="closeModal('book-2')">
             <div class="thumbnail">
-                <img src="images/shelf-thumbs/alula.png" alt="">
+                <img src="images/icons/alula.png" alt="">
             </div>
             <h2>ALULA CENTRAL</h2>
         </div>
         <div class="thumb" onclick="closeModal('book-3')">
             <div class="thumbnail">
-                <img src="images/shelf-thumbs/oasis.png" alt="">
+                <img src="images/icons/oasis.png" alt="">
             </div>
             <h2>OASIS FARMS</h2>
         </div>
         <div class="thumb" onclick="closeModal('book-4')">
             <div class="thumbnail">
-                <img src="images/shelf-thumbs/naba-village.png" alt="">
+                <img src="images/icons/naba-village.png" alt="">
             </div>
             <h2>NABATEAN VILLAGE</h2>
         </div>
         <div class="thumb" onclick="closeModal('book-5')">
             <div class="thumbnail">
-                <img src="images/shelf-thumbs/naba-farms.png" alt="">
+                <img src="images/icons/naba-farms.png" alt="">
             </div>
             <h2>NABATAEAN FARMS</h2>
         </div>
         <div class="thumb" onclick="closeModal('book-6')">
             <div class="thumbnail">
-                <img src="images/shelf-thumbs/aljadidah.png" alt="">
+                <img src="images/icons/aljadidah.png" alt="">
             </div>
             <h2>ALJADIDAH VILLAGE</h2>
         </div>
@@ -1257,7 +438,6 @@
         window.location = window.location.origin + window.location.pathname + '#' + cls
         location.reload();
     }
-
 </script>
 </body>
 </html>
