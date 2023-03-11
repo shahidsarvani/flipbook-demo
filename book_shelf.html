@@ -281,6 +281,49 @@
                 lightBox: true,
                 lightboxResetOnOpen: true
             });
+            $(".top-17").flipBook({
+                pages: [
+                    { src: "books/aljadidah-village/cover.jpg", title: "Cover Page", },
+                    { src: "books/aljadidah-village/index.png", title: "Intro Video", htmlContent: '<iframe width="1544" height="1000" src="books/aljadidah-village/intro.mp4" frameborder="0" allowfullscreen></iframe>' },
+                    { src: "books/aljadidah-village/aljadidah1.jpg", title: "Page 1", },
+                    { src: "books/aljadidah-village/aljadidah2.jpg", title: "Page 2", },
+                    { src: "books/aljadidah-village/aljadidah3.jpg", title: "Page 3", },
+                    { src: "books/aljadidah-village/aljadidah4.jpg", title: "Page 4", },
+                    { src: "books/aljadidah-village/aljadidah5.jpg", title: "Page 5", },
+                    { src: "books/aljadidah-village/aljadidah6.jpg", title: "Page 6", },
+                    { src: "books/aljadidah-village/aljadidah7.jpg", title: "Page 7", },
+                    { src: "books/aljadidah-village/aljadidah8.jpg", title: "Page 8", },
+                    { src: "books/aljadidah-village/aljadidah9.jpg", title: "Page 9", },
+                    { src: "books/aljadidah-village/aljadidah10.jpg", title: "Page 10", },
+                    { src: "books/aljadidah-village/aljadidah11.jpg", title: "Page 11", },
+                    { src: "books/aljadidah-village/aljadidah12.jpg", title: "Page 12", },
+                    { src: "books/aljadidah-village/aljadidah13.jpg", title: "Page 13", },
+                    { src: "books/aljadidah-village/aljadidah14.jpg", title: "Page 14", },
+                    { src: "books/aljadidah-village/aljadidah15.jpg", title: "Page 15", },
+                    { src: "books/aljadidah-village/aljadidah16.jpg", title: "Page 16", },
+                    { src: "books/aljadidah-village/aljadidah17.jpg", title: "Page 17", },
+                    { src: "books/aljadidah-village/aljadidah18.jpg", title: "Page 18", },
+                    { src: "books/aljadidah-village/aljadidah19.jpg", title: "Page 19", },
+                    { src: "books/aljadidah-village/aljadidah20.jpg", title: "Page 20", },
+                    { src: "books/aljadidah-village/aljadidah21.jpg", title: "Page 21", },
+                    { src: "books/aljadidah-village/aljadidah22.jpg", title: "Page 22", },
+                    { src: "books/aljadidah-village/aljadidah23.jpg", title: "Page 23", },
+                    { src: "books/aljadidah-village/aljadidah24.jpg", title: "Page 24", },
+                    { src: "books/aljadidah-village/aljadidah25.jpg", title: "Page 25", },
+                    { src: "books/aljadidah-village/aljadidah26.jpg", title: "Page 26", },
+                    { src: "books/aljadidah-village/aljadidah27.jpg", title: "Page 27", },
+                    { src: "books/aljadidah-village/aljadidah28.jpg", title: "Page 28", },
+                    { src: "books/aljadidah-village/aljadidah29.jpg", title: "Page 29", },
+                    { src: "books/aljadidah-village/aljadidah30.jpg", title: "Page 30", },
+                    { src: "books/aljadidah-village/aljadidah31.jpg", title: "Page 31", },
+                    { src: "books/aljadidah-village/aljadidah32.jpg", title: "Page 32", },
+                    { src: "books/page-darkbg.jpg", title: "Last" }
+                ],
+                startPage: 0,
+                lightboxStartPage: 0,
+                lightBox: true,
+                lightboxResetOnOpen: true
+            });
 
             if (location.hash) {
                 $('.' + location.hash.substr(1)).click()
@@ -397,6 +440,24 @@
 <body>
 <div class="bookshelf">
     <div class="covers">
+        <div class="thumb" onclick="closeModal('top-17')">
+            <!-- <div class="thumbnail">
+                <img src="images/icons/naba-farms.png" alt="">
+            </div> -->
+            <h2>TOP 17</h2>
+        </div>
+        <div class="thumb" onclick="closeModal('book-5')">
+            <!-- <div class="thumbnail">
+                <img src="images/icons/naba-farms.png" alt="">
+            </div> -->
+            <h2>NABATAEAN FARMS</h2>
+        </div>
+        <div class="thumb" onclick="closeModal('book-3')">
+            <!-- <div class="thumbnail">
+                <img src="images/icons/oasis.png" alt="">
+            </div> -->
+            <h2>OASIS FARMS</h2>
+        </div>
         <div class="thumb" onclick="closeModal('book-1')">
             <!-- <div class="thumbnail">
                 <img src="images/icons/dadan.png" alt="">
@@ -409,23 +470,11 @@
             </div> -->
             <h2>ALULA CENTRAL</h2>
         </div>
-        <div class="thumb" onclick="closeModal('book-3')">
-            <!-- <div class="thumbnail">
-                <img src="images/icons/oasis.png" alt="">
-            </div> -->
-            <h2>OASIS FARMS</h2>
-        </div>
         <div class="thumb" onclick="closeModal('book-4')">
             <!-- <div class="thumbnail">
                 <img src="images/icons/naba-village.png" alt="">
             </div> -->
             <h2>NABATEAN VILLAGE</h2>
-        </div>
-        <div class="thumb" onclick="closeModal('book-5')">
-            <!-- <div class="thumbnail">
-                <img src="images/icons/naba-farms.png" alt="">
-            </div> -->
-            <h2>NABATAEAN FARMS</h2>
         </div>
         <div class="thumb" onclick="closeModal('book-6')">
             <!-- <div class="thumbnail">
@@ -441,6 +490,7 @@
 <div class="book-4"></div>
 <div class="book-5"></div>
 <div class="book-6"></div>
+<div class="top-17"></div>
 
 <script>
     function closeModal(cls) {
