@@ -440,43 +440,43 @@
 <body>
 <div class="bookshelf">
     <div class="covers">
-        <div class="thumb" onclick="closeModal('top-17')">
+        <div class="thumb" onclick="closeModal('top-17')" id="top-17">
             <!-- <div class="thumbnail">
                 <img src="images/icons/naba-farms.png" alt="">
             </div> -->
             <h2>TOP 17</h2>
         </div>
-        <div class="thumb" onclick="closeModal('book-5')">
+        <div class="thumb" onclick="closeModal('book-5')" id="book-5">
             <!-- <div class="thumbnail">
                 <img src="images/icons/naba-farms.png" alt="">
             </div> -->
             <h2>NABATAEAN FARMS</h2>
         </div>
-        <div class="thumb" onclick="closeModal('book-3')">
+        <div class="thumb" onclick="closeModal('book-3')" id="book-3">
             <!-- <div class="thumbnail">
                 <img src="images/icons/oasis.png" alt="">
             </div> -->
             <h2>OASIS FARMS</h2>
         </div>
-        <div class="thumb" onclick="closeModal('book-1')">
+        <div class="thumb" onclick="closeModal('book-1')" id="book-1">
             <!-- <div class="thumbnail">
                 <img src="images/icons/dadan.png" alt="">
             </div> -->
             <h2>DADAN VILLAGE</h2>
         </div>
-        <div class="thumb" onclick="closeModal('book-2')">
+        <div class="thumb" onclick="closeModal('book-2')" id="book-2">
             <!-- <div class="thumbnail">
                 <img src="images/icons/alula.png" alt="">
             </div> -->
             <h2>ALULA CENTRAL</h2>
         </div>
-        <div class="thumb" onclick="closeModal('book-4')">
+        <div class="thumb" onclick="closeModal('book-4')" id="book-4">
             <!-- <div class="thumbnail">
                 <img src="images/icons/naba-village.png" alt="">
             </div> -->
             <h2>NABATEAN VILLAGE</h2>
         </div>
-        <div class="thumb" onclick="closeModal('book-6')">
+        <div class="thumb" onclick="closeModal('book-6')" id="book-6">
             <!-- <div class="thumbnail">
                 <img src="images/icons/aljadidah.png" alt="">
             </div> -->
@@ -496,6 +496,10 @@
     function closeModal(cls) {
         window.location = window.location.origin + window.location.pathname + '#' + cls
         location.reload();
+    }
+
+    if (location.hash.substr(1)) {
+        document.getElementById(location.hash.substr(1)).classList.add('active')
     }
 </script>
 </body>
