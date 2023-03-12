@@ -3,33 +3,158 @@
 
 <head>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
-
-<link rel="stylesheet" type="text/css" href="css/flipbook.style.css">
-
-<script src="js/flipbook.min.js"></script>
-
-<script type="text/javascript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/flipbook.style.css">
+    <script src="js/flipbook.min.js"></script>
+    <script type="text/javascript">
 
     $(document).ready(function () {
         $("#container").flipBook({
             pages:[
-                {src:"images/book2/page1.jpg", thumb:"images/book2/thumb1.jpg", title:"Cover"},
-                {src:"images/book2/page2.jpg", thumb:"images/book2/thumb2.jpg", title:"Page two"},
-                {src:"images/book2/page3.jpg", thumb:"images/book2/thumb3.jpg", title:"Page three"},
-                {src:"images/book2/page4.jpg", thumb:"images/book2/thumb4.jpg", title:""},
-                {src:"images/book2/page5.jpg", thumb:"images/book2/thumb5.jpg", title:"Page five"},
-                {src:"images/book2/page6.jpg", thumb:"images/book2/thumb6.jpg", title:"Page six"},
-                {src:"images/book2/page7.jpg", thumb:"images/book2/thumb7.jpg", title:"Page seven"},
-                {src:"images/book2/page8.jpg", thumb:"images/book2/thumb8.jpg", title:"Last"}
+                    { src: "books/top17/cover-main.jpg", title: "Cover Page", },
+                    { src: "books/top17/1.jpg", title: "Page 1", },
+                    { src: "books/top17/2.jpg", title: "Page 2", },
+                    { src: "books/top17/3.jpg", title: "Page 3", },
+                    { src: "books/top17/4.jpg", title: "Page 4", },
+                    { src: "books/top17/5.jpg", title: "Page 5", },
+                    { src: "books/top17/6.jpg", title: "Page 6", },
+                    { src: "books/top17/7.jpg", title: "Page 7", },
+                    { src: "books/top17/8.jpg", title: "Page 8", },
+                    { src: "books/top17/9.jpg", title: "Page 9", },
+                    { src: "books/top17/10.jpg", title: "Page 10", },
+                    { src: "books/top17/11.jpg", title: "Page 11", },
+                    { src: "books/top17/12.jpg", title: "Page 12", },
+                    { src: "books/top17/13.jpg", title: "Page 13", },
+                    { src: "books/top17/14.jpg", title: "Page 14", },
+                    { src: "books/top17/15.jpg", title: "Page 15", },
+                    { src: "books/top17/16.jpg", title: "Page 16", },
+                    { src: "books/top17/17.jpg", title: "Page 17", },
+                    { src: "books/top17/18.jpg", title: "Page 18", },
+                    { src: "books/top17/19.jpg", title: "Page 19", },
+                    { src: "books/top17/20.jpg", title: "Page 20", },
+                    { src: "books/top17/21.jpg", title: "Page 21", },
+                    { src: "books/top17/22.jpg", title: "Page 22", },
+                    { src: "books/top17/23.jpg", title: "Page 23", },
+                    { src: "books/top17/24.jpg", title: "Page 24", },
+                    { src: "books/top17/25.jpg", title: "Page 25", },
+                    { src: "books/top17/26.jpg", title: "Page 26", },
+                    { src: "books/top17/27.jpg", title: "Page 27", },
+                    { src: "books/top17/28.jpg", title: "Page 28", },
+                    { src: "books/top17/29.jpg", title: "Page 29", },
+                    { src: "books/top17/30.jpg", title: "Page 30", },
+                    { src: "books/top17/31.jpg", title: "Page 31", },
+                    { src: "books/top17/32.jpg", title: "Page 32", },
+                    { src: "books/top17/33.jpg", title: "Page 33", },
+                    { src: "books/top17/34.jpg", title: "Page 34", },
+                    { src: "books/page-darkbg.jpg", title: "Last" }
             ],
             viewMode:"2d",
 			singlePageMode:true
         });
     })
 </script>
+
+<style type="text/css">
+    @font-face {
+        font-family: 'HelveticaNeue';
+        src: url('fonts/HelveticaNeue.ttf');
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .flipbook-currentPageHolder{
+        display: none !important;
+    }
+
+    body.flipbook-overflow-hidden .bookshelf {
+        position: fixed;
+        top: 150px;
+        transition: 0.5s;
+    }
+
+    body.flipbook-overflow-hidden .flipbook-overlay {
+        top: 260px !important;
+        background: none !important;
+    }
+
+    body.flipbook-overflow-hidden .bookshelf .thumb h2 {
+        font-size: 18px;
+        margin-top: -40px;
+    }
+
+    body.flipbook-overflow-hidden .bookshelf .thumb {
+        width: 260px !important;
+    }
+
+    body.flipbook-overflow-hidden .bookshelf .thumb img {
+        width: 55%;
+        margin: 0 auto;
+    }
+
+    .bookshelf .thumb {
+        display: inline-block;
+        cursor: pointer;
+        margin: 0px 0.5%;
+        width: 350px !important;
+        /* box-shadow: 0px 1px 3px rgba(0, 0, 0, .3); */
+        max-width: 350px;
+    }
+
+    .bookshelf .thumb h2 {
+        font-size: 30px;
+        font-family: 'HelveticaNeue';
+        font-weight: bold;
+        letter-spacing: 2px;
+        line-height: 38px;
+        /* background-color: #222;
+        color: #fff; */
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .bookshelf .thumb img {
+        width: 100%;
+        display: block;
+    }
+
+    .bookshelf .shelf-img {
+        z-index: 0;
+        height: auto;
+        max-width: 100%;
+        vertical-align: top;
+        margin-top: -12px;
+    }
+
+    .bookshelf .covers {
+        width: 100%;
+        height: auto;
+        z-index: 99;
+        position: relative;
+        text-align: center;
+    }
+
+    .bookshelf {
+        text-align: center;
+        padding: 0px;
+        width: 100%;
+    }
+
+    .thumbnail {
+        /* background-color: #dbdbdb; */
+        padding: 40px;
+    }
+    body.flipbook-overflow-hidden .bookshelf .thumb.active h2 {
+        color: #c2ab83;
+    }
+</style>
 
 </head>
 	<body>
