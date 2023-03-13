@@ -10,13 +10,12 @@
     <script type="text/javascript">
 
     $(document).ready(function () {
-        $("#container").flipBook({
+        $(".book-1").flipBook({
             pages:[
-                    { src: "books/top17/cover-main.jpg", title: "Cover Page", },
-                    { src: "books/top17/1.jpg", title: "Page 1", },
-                    { src: "books/top17/2.jpg", title: "Page 2", },
-                    { src: "books/top17/3.jpg", title: "Page 3", },
-                    { src: "books/top17/4.jpg", title: "Page 4", },
+                    // { src: "books/top17/cover-main.jpg", title: "Cover Page", },
+                    { src: "books/dadan-village/dadan1.jpg", title: "Page 1", },
+                    { src: "books/dadan-village/dadan2.jpg", title: "Page 2", },
+                    { src: "books/dadan-village/dadan3.jpg", title: "Page 3", },
                     { src: "books/top17/5.jpg", title: "Page 5", },
                     { src: "books/top17/6.jpg", title: "Page 6", },
                     { src: "books/top17/7.jpg", title: "Page 7", },
@@ -51,6 +50,61 @@
             ],
 			singlePageMode:true
         });
+
+        $(".book-2").flipBook({
+            pages:[
+                    // { src: "books/dadan-village/dadan3.jpg", title: "Cover Page", },
+                    { src: "books/alula-central/alula1.jpg", title: "Page 1", },
+                    { src: "books/alula-central/alula2.jpg", title: "Page 2", },
+                    { src: "books/alula-central/alula3.jpg", title: "Page 3", },
+                    { src: "books/alula-central/alula4.jpg", title: "Page 4", },
+                    { src: "books/alula-central/alula5.jpg", title: "Page 5", },
+                    { src: "books/alula-central/alula6.jpg", title: "Page 6", },
+                    { src: "books/alula-central/alula7.jpg", title: "Page 7", },
+                    { src: "books/top17/7.jpg", title: "Page 7", },
+                    { src: "books/top17/8.jpg", title: "Page 8", },
+                    { src: "books/top17/9.jpg", title: "Page 9", },
+                    { src: "books/top17/10.jpg", title: "Page 10", },
+                    { src: "books/top17/11.jpg", title: "Page 11", },
+                    { src: "books/top17/12.jpg", title: "Page 12", },
+                    { src: "books/top17/13.jpg", title: "Page 13", },
+                    { src: "books/top17/14.jpg", title: "Page 14", },
+                    { src: "books/top17/15.jpg", title: "Page 15", },
+                    { src: "books/top17/16.jpg", title: "Page 16", },
+                    { src: "books/top17/17.jpg", title: "Page 17", },
+                    { src: "books/top17/18.jpg", title: "Page 18", },
+                    { src: "books/top17/19.jpg", title: "Page 19", },
+                    { src: "books/top17/20.jpg", title: "Page 20", },
+                    { src: "books/top17/21.jpg", title: "Page 21", },
+                    { src: "books/top17/22.jpg", title: "Page 22", },
+                    { src: "books/top17/23.jpg", title: "Page 23", },
+                    { src: "books/top17/24.jpg", title: "Page 24", },
+                    { src: "books/top17/25.jpg", title: "Page 25", },
+                    { src: "books/top17/26.jpg", title: "Page 26", },
+                    { src: "books/top17/27.jpg", title: "Page 27", },
+                    { src: "books/top17/28.jpg", title: "Page 28", },
+                    { src: "books/top17/29.jpg", title: "Page 29", },
+                    { src: "books/top17/30.jpg", title: "Page 30", },
+                    { src: "books/top17/31.jpg", title: "Page 31", },
+                    { src: "books/top17/32.jpg", title: "Page 32", },
+                    { src: "books/top17/33.jpg", title: "Page 33", },
+                    { src: "books/top17/34.jpg", title: "Page 34", },
+                    { src: "books/page-darkbg.jpg", title: "Last" }
+            ],
+			singlePageMode:true
+        });
+
+        if (location.hash) {
+            console.log("location.hash.substr(1): " + location.hash.substr(1))
+                $('.' + location.hash.substr(1)).click()
+
+                setTimeout(function () {
+                    $('[data-name="btnClose"]').click(function () {
+                        $('iframe').remove();
+                        location.reload();
+                    })
+                }, 3000);
+            }
     })
 </script>
 <style type="text/css">
@@ -162,6 +216,72 @@
 </style>
 </head>
 	<body>
-		<div id="container" style="position:absolute;width:500px;height:690px"/>
+        <div class="bookshelf">
+            <div class="covers">
+                <div class="thumb" onclick="closeModal('top-17')" id="top-17">
+                    <!-- <div class="thumbnail">
+                        <img src="images/icons/naba-farms.png" alt="">
+                    </div> -->
+                    <h2>TOP 17</h2>
+                </div>
+                <div class="thumb" onclick="closeModal('book-1')" id="book-1">
+                    <!-- <div class="thumbnail">
+                        <img src="images/icons/dadan.png" alt="">
+                    </div> -->
+                    <h2>DADAN VILLAGE</h2>
+                </div>
+                <div class="thumb" onclick="closeModal('book-2')" id="book-2">
+                    <!-- <div class="thumbnail">
+                        <img src="images/icons/alula.png" alt="">
+                    </div> -->
+                    <h2>ALULA CENTRAL</h2>
+                </div>
+                <div class="thumb" onclick="closeModal('book-5')" id="book-5">
+                    <!-- <div class="thumbnail">
+                        <img src="images/icons/naba-farms.png" alt="">
+                    </div> -->
+                    <h2>NABATAEAN FARMS</h2>
+                </div>
+                <div class="thumb" onclick="closeModal('book-3')" id="book-3">
+                    <!-- <div class="thumbnail">
+                        <img src="images/icons/oasis.png" alt="">
+                    </div> -->
+                    <h2>OASIS FARMS</h2>
+                </div>
+                <div class="thumb" onclick="closeModal('book-4')" id="book-4">
+                    <!-- <div class="thumbnail">
+                        <img src="images/icons/naba-village.png" alt="">
+                    </div> -->
+                    <h2>NABATEAN VILLAGE</h2>
+                </div>
+                <div class="thumb" onclick="closeModal('book-6')" id="book-6">
+                    <!-- <div class="thumbnail">
+                        <img src="images/icons/aljadidah.png" alt="">
+                    </div> -->
+                    <h2>ALJADIDAH VILLAGE</h2>
+                </div>
+            </div>
+        </div>
+        <div id="container" class="book-1" style="position:absolute;width:500px;height:690px"></div>
+        <div id="container" class="book-2" style="position:absolute;width:500px;height:690px"></div>
+        <!-- <div class="book-1"></div>
+        <div class="book-2"></div>
+        <div class="book-3"></div>
+        <div class="book-4"></div>
+        <div class="book-5"></div>
+        <div class="book-6"></div>
+        <div class="top-17"></div> -->
+        <script>
+            function closeModal(cls) {
+                console.log("Origin: " + window.location.origin)
+                console.log("Path: " + window.location.pathname)
+                window.location = window.location.origin + window.location.pathname + '#' + cls
+                location.reload();
+            }
+        
+            if (location.hash.substr(1)) {
+                document.getElementById(location.hash.substr(1)).classList.add('active')
+            }
+        </script>
 	</body>
 </html>

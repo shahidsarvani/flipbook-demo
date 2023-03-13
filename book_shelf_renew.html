@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/flipbook.style.css">
+    <script src="js/flipbook.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".book-1").flipBook({
+                pages: [
+                    { src: "books/top17/cover-main.jpg", title: "Cover Page", },
+                    { src: "books/dadan-village/index.png", title: "Index Page", },
+                    { src: "books/dadan-village/index.png", title: "Intro Video", htmlContent: '<iframe width="1340" height="1000" src="books/dadan-village/intro.mp4" frameborder="0" allowfullscreen></iframe>' },
+                    { src: "books/dadan-village/dadan1.jpg", title: "Page 1", },
+                    { src: "books/dadan-village/dadan2.jpg", title: "Page 2", },
+                    { src: "books/dadan-village/dadan3.jpg", title: "Page 3", },
+                    { src: "books/dadan-village/dadan4.jpg", title: "Page 4", },
+                    { src: "books/dadan-village/dadan5.jpg", title: "Page 5", },
+                    { src: "books/dadan-village/dadan6.jpg", title: "Page 6", },
+                    { src: "books/dadan-village/dadan7.jpg", title: "Page 7", },
+                    { src: "books/dadan-village/dadan8.jpg", title: "Page 8", },
+                    { src: "books/dadan-village/dadan9.jpg", title: "Page 9", },
+                    { src: "books/dadan-village/dadan10.jpg", title: "Page 10", },
+                    { src: "books/dadan-village/dadan11.jpg", title: "Page 11", },
+                    { src: "books/dadan-village/dadan12.jpg", title: "Page 12", },
+                    { src: "books/dadan-village/dadan13.jpg", title: "Page 13", },
+                    { src: "books/dadan-village/dadan14.jpg", title: "Page 14", },
+                    { src: "books/dadan-village/dadan15.jpg", title: "Page 15", },
+                    { src: "books/dadan-village/dadan16.jpg", title: "Page 16", },
+                    { src: "books/dadan-village/dadan17.jpg", title: "Page 17", },
+                    { src: "books/dadan-village/dadan18.jpg", title: "Page 18", },
+                    { src: "books/dadan-village/dadan19.jpg", title: "Page 19", },
+                    { src: "books/dadan-village/dadan20.jpg", title: "Page 20", },
+                    { src: "books/dadan-village/dadan21.jpg", title: "Page 21", },
+                    { src: "books/dadan-village/dadan22.jpg", title: "Page 22", },
+                    { src: "books/dadan-village/dadan23.jpg", title: "Page 23", },
+                    { src: "books/dadan-village/dadan24.jpg", title: "Page 24", },
+                    { src: "books/dadan-village/dadan25.jpg", title: "Page 25", },
+                    { src: "books/dadan-village/dadan26.jpg", title: "Page 26", },
+                    { src: "books/page-darkbg.jpg", title: "Last" }
+                ],
+                startPage: 2,
+                lightboxStartPage: 2,
+                lightBox: true,
+                lightboxResetOnOpen: true,
+                singlePageMode:true
+            });
+
+            $(".book-2").flipBook({
+                pages: [
+                    { src: "books/alula-central/cover.jpg", title: "Cover Page", },
+                    { src: "books/alula-central/index.png", title: "Intro Video", htmlContent: '<iframe width="1544" height="1000" src="books/alula-central/intro.mp4" frameborder="0" allowfullscreen></iframe>' },
+                    { src: "books/alula-central/alula1.jpg", title: "Page 1", },
+                    { src: "books/alula-central/alula2.jpg", title: "Page 2", },
+                    { src: "books/alula-central/alula3.jpg", title: "Page 3", },
+                    { src: "books/alula-central/alula4.jpg", title: "Page 4", },
+                    { src: "books/alula-central/alula5.jpg", title: "Page 5", },
+                    { src: "books/alula-central/alula6.jpg", title: "Page 6", },
+                    { src: "books/alula-central/alula7.jpg", title: "Page 7", },
+                    { src: "books/alula-central/alula8.jpg", title: "Page 8", },
+                    { src: "books/alula-central/alula9.jpg", title: "Page 9", },
+                    { src: "books/alula-central/alula10.jpg", title: "Page 10", },
+                    { src: "books/alula-central/alula11.jpg", title: "Page 11", },
+                    { src: "books/alula-central/alula12.jpg", title: "Page 12", },
+                    { src: "books/alula-central/alula13.jpg", title: "Page 13", },
+                    { src: "books/alula-central/alula14.jpg", title: "Page 14", },
+                    { src: "books/alula-central/alula15.jpg", title: "Page 15", },
+                    { src: "books/alula-central/alula16.jpg", title: "Page 16", },
+                    { src: "books/alula-central/alula17.jpg", title: "Page 17", },
+                    { src: "books/alula-central/alula18.jpg", title: "Page 18", },
+                    { src: "books/page-darkbg.jpg", title: "Last" }
+                ],
+                startPage: 2,
+                lightboxStartPage: 2,
+                lightBox: true,
+                lightboxResetOnOpen: true,
+                singlePageMode:true
+            });
+
+            $(".book-3").flipBook({
+                pages: [
+                    { src: "books/oasis-farms/cover.jpg", title: "Cover Page", },
+                    { src: "books/oasis-farms/index.png", title: "Intro Video", htmlContent: '<iframe width="1544" height="1000" src="books/oasis-farms/intro.mp4" frameborder="0" allowfullscreen></iframe>' },
+                    { src: "books/oasis-farms/oasis1.jpg", title: "Page 1", },
+                    { src: "books/oasis-farms/oasis2.jpg", title: "Page 2", },
+                    { src: "books/oasis-farms/oasis3.jpg", title: "Page 3", },
+                    { src: "books/oasis-farms/oasis4.jpg", title: "Page 4", },
+                    { src: "books/oasis-farms/oasis5.jpg", title: "Page 5", },
+                    { src: "books/oasis-farms/oasis6.jpg", title: "Page 6", },
+                    { src: "books/oasis-farms/oasis7.jpg", title: "Page 7", },
+                    { src: "books/oasis-farms/oasis8.jpg", title: "Page 8", },
+                    { src: "books/oasis-farms/oasis9.jpg", title: "Page 9", },
+                    { src: "books/oasis-farms/oasis10.jpg", title: "Page 10", },
+                    { src: "books/oasis-farms/oasis11.jpg", title: "Page 11", },
+                    { src: "books/oasis-farms/oasis12.jpg", title: "Page 12", },
+                    { src: "books/oasis-farms/oasis13.jpg", title: "Page 13", },
+                    { src: "books/oasis-farms/oasis14.jpg", title: "Page 14", },
+                    { src: "books/oasis-farms/oasis15.jpg", title: "Page 15", },
+                    { src: "books/oasis-farms/oasis16.jpg", title: "Page 16", },
+                    { src: "books/oasis-farms/oasis17.jpg", title: "Page 17", },
+                    { src: "books/oasis-farms/oasis18.jpg", title: "Page 18", },
+                    { src: "books/oasis-farms/oasis19.jpg", title: "Page 19", },
+                    { src: "books/oasis-farms/oasis20.jpg", title: "Page 20", },
+                    { src: "books/oasis-farms/oasis21.jpg", title: "Page 21", },
+                    { src: "books/oasis-farms/oasis22.jpg", title: "Page 22", },
+                    { src: "books/oasis-farms/oasis23.jpg", title: "Page 23", },
+                    { src: "books/oasis-farms/oasis24.jpg", title: "Page 24", },
+                    { src: "books/oasis-farms/oasis25.jpg", title: "Page 25", },
+                    { src: "books/oasis-farms/oasis26.jpg", title: "Page 26", },
+                    { src: "books/oasis-farms/oasis27.jpg", title: "Page 27", },
+                    { src: "books/oasis-farms/oasis28.jpg", title: "Page 28", },
+                    { src: "books/oasis-farms/oasis29.jpg", title: "Page 29", },
+                    { src: "books/oasis-farms/oasis30.jpg", title: "Page 30", },
+                    { src: "books/oasis-farms/oasis31.jpg", title: "Page 31", },
+                    { src: "books/oasis-farms/oasis32.jpg", title: "Page 32", },
+                    { src: "books/oasis-farms/oasis33.jpg", title: "Page 33", },
+                    { src: "books/oasis-farms/oasis34.jpg", title: "Page 34", },
+                    { src: "books/oasis-farms/oasis35.jpg", title: "Page 35", },
+                    { src: "books/oasis-farms/oasis36.jpg", title: "Page 36", },
+                    { src: "books/oasis-farms/oasis37.jpg", title: "Page 37", },
+                    { src: "books/oasis-farms/oasis38.jpg", title: "Page 38", },
+                    { src: "books/oasis-farms/oasis39.jpg", title: "Page 39", },
+                    { src: "books/oasis-farms/oasis40.jpg", title: "Page 40", },
+                    { src: "books/oasis-farms/oasis41.jpg", title: "Page 41", },
+                    { src: "books/oasis-farms/oasis42.jpg", title: "Page 42", },
+                    { src: "books/oasis-farms/oasis43.jpg", title: "Page 43", },
+                    { src: "books/oasis-farms/oasis44.jpg", title: "Page 44", },
+                    { src: "books/oasis-farms/oasis45.jpg", title: "Page 45", },
+                    { src: "books/oasis-farms/oasis46.jpg", title: "Page 46", },
+                    { src: "books/oasis-farms/oasis47.jpg", title: "Page 47", },
+                    { src: "books/oasis-farms/oasis48.jpg", title: "Page 48", },
+                    { src: "books/oasis-farms/oasis49.jpg", title: "Page 49", },
+                    { src: "books/oasis-farms/oasis50.jpg", title: "Page 50", },
+                    { src: "books/oasis-farms/oasis51.jpg", title: "Page 51", },
+                    { src: "books/page-darkbg.jpg", title: "Last" }
+                ],
+                startPage: 2,
+                lightboxStartPage: 2,
+                lightBox: true,
+                lightboxResetOnOpen: true,
+                singlePageMode:true
+            });
+
+            $(".book-4").flipBook({
+                pages: [
+                    { src: "books/nabatean-village/cover.jpg", title: "Cover Page", },
+                    { src: "books/nabatean-village/index.png", title: "Intro Video", htmlContent: '<iframe width="1544" height="1000" src="books/nabatean-village/intro.mp4" frameborder="0" allowfullscreen></iframe>' },
+                    { src: "books/nabatean-village/naba-village1.jpg", title: "Page 1", },
+                    { src: "books/nabatean-village/naba-village2.jpg", title: "Page 2", },
+                    { src: "books/nabatean-village/naba-village3.jpg", title: "Page 3", },
+                    { src: "books/nabatean-village/naba-village4.jpg", title: "Page 4", },
+                    { src: "books/nabatean-village/naba-village5.jpg", title: "Page 5", },
+                    { src: "books/nabatean-village/naba-village6.jpg", title: "Page 6", },
+                    { src: "books/nabatean-village/naba-village7.jpg", title: "Page 7", },
+                    { src: "books/nabatean-village/naba-village8.jpg", title: "Page 8", },
+                    { src: "books/nabatean-village/naba-village9.jpg", title: "Page 9", },
+                    { src: "books/nabatean-village/naba-village10.jpg", title: "Page 10", },
+                    { src: "books/nabatean-village/naba-village11.jpg", title: "Page 11", },
+                    { src: "books/nabatean-village/naba-village12.jpg", title: "Page 12", },
+                    { src: "books/nabatean-village/naba-village13.jpg", title: "Page 13", },
+                    { src: "books/nabatean-village/naba-village14.jpg", title: "Page 14", },
+                    { src: "books/page-darkbg.jpg", title: "Last" }
+                ],
+                startPage: 2,
+                lightboxStartPage: 2,
+                lightBox: true,
+                lightboxResetOnOpen: true,
+                singlePageMode:true
+            });
+
+            $(".book-5").flipBook({
+                pages: [
+                    { src: "books/nabatean-farms/cover.jpg", title: "Cover Page", },
+                    { src: "books/nabatean-farms/index.jpg", title: "Intro Video", htmlContent: '<iframe width="1544" height="1000" src="books/nabatean-farms/intro.mp4" frameborder="0" allowfullscreen></iframe>' },
+                    { src: "books/nabatean-farms/naba-farms61.jpg", title: "Page 61", },
+                    { src: "books/nabatean-farms/naba-farms62.jpg", title: "Page 62", },
+                    { src: "books/nabatean-farms/naba-farms59.jpg", title: "Page 59", },
+                    { src: "books/nabatean-farms/naba-farms60.jpg", title: "Page 60", },
+                    { src: "books/nabatean-farms/naba-farms1.jpg", title: "Page 1", },
+                    { src: "books/nabatean-farms/naba-farms2.jpg", title: "Page 2", },
+                    { src: "books/nabatean-farms/naba-farms3.jpg", title: "Page 3", },
+                    { src: "books/nabatean-farms/naba-farms4.jpg", title: "Page 4", },
+                    { src: "books/nabatean-farms/naba-farms5.jpg", title: "Page 5", },
+                    { src: "books/nabatean-farms/naba-farms6.jpg", title: "Page 6", },
+                    { src: "books/nabatean-farms/naba-farms7.jpg", title: "Page 7", },
+                    { src: "books/nabatean-farms/naba-farms8.jpg", title: "Page 8", },
+                    { src: "books/nabatean-farms/naba-farms9.jpg", title: "Page 9", },
+                    { src: "books/nabatean-farms/naba-farms10.jpg", title: "Page 10", },
+                    { src: "books/nabatean-farms/naba-farms11.jpg", title: "Page 11", },
+                    { src: "books/nabatean-farms/naba-farms12.jpg", title: "Page 12", },
+                    { src: "books/nabatean-farms/naba-farms13.jpg", title: "Page 13", },
+                    { src: "books/nabatean-farms/naba-farms14.jpg", title: "Page 14", },
+                    { src: "books/nabatean-farms/naba-farms15.jpg", title: "Page 15", },
+                    { src: "books/nabatean-farms/naba-farms16.jpg", title: "Page 16", },
+                    { src: "books/nabatean-farms/naba-farms17.jpg", title: "Page 17", },
+                    { src: "books/nabatean-farms/naba-farms18.jpg", title: "Page 18", },
+                    { src: "books/nabatean-farms/naba-farms19.jpg", title: "Page 19", },
+                    { src: "books/nabatean-farms/naba-farms20.jpg", title: "Page 20", },
+                    { src: "books/nabatean-farms/naba-farms21.jpg", title: "Page 21", },
+                    { src: "books/nabatean-farms/naba-farms22.jpg", title: "Page 22", },
+                    { src: "books/nabatean-farms/naba-farms23.jpg", title: "Page 23", },
+                    { src: "books/nabatean-farms/naba-farms24.jpg", title: "Page 24", },
+                    { src: "books/nabatean-farms/naba-farms25.jpg", title: "Page 25", },
+                    { src: "books/nabatean-farms/naba-farms26.jpg", title: "Page 26", },
+                    { src: "books/nabatean-farms/naba-farms27.jpg", title: "Page 27", },
+                    { src: "books/nabatean-farms/naba-farms28.jpg", title: "Page 28", },
+                    { src: "books/nabatean-farms/naba-farms29.jpg", title: "Page 29", },
+                    { src: "books/nabatean-farms/naba-farms30.jpg", title: "Page 30", },
+                    { src: "books/nabatean-farms/naba-farms31.jpg", title: "Page 31", },
+                    { src: "books/nabatean-farms/naba-farms32.jpg", title: "Page 32", },
+                    { src: "books/nabatean-farms/naba-farms33.jpg", title: "Page 33", },
+                    { src: "books/nabatean-farms/naba-farms34.jpg", title: "Page 34", },
+                    { src: "books/nabatean-farms/naba-farms35.jpg", title: "Page 35", },
+                    { src: "books/nabatean-farms/naba-farms36.jpg", title: "Page 36", },
+                    { src: "books/nabatean-farms/naba-farms37.jpg", title: "Page 37", },
+                    { src: "books/nabatean-farms/naba-farms38.jpg", title: "Page 38", },
+                    { src: "books/nabatean-farms/naba-farms39.jpg", title: "Page 39", },
+                    { src: "books/nabatean-farms/naba-farms40.jpg", title: "Page 40", },
+                    { src: "books/nabatean-farms/naba-farms41.jpg", title: "Page 41", },
+                    { src: "books/nabatean-farms/naba-farms42.jpg", title: "Page 42", },
+                    { src: "books/nabatean-farms/naba-farms43.jpg", title: "Page 43", },
+                    { src: "books/nabatean-farms/naba-farms44.jpg", title: "Page 44", },
+                    { src: "books/nabatean-farms/naba-farms45.jpg", title: "Page 45", },
+                    { src: "books/nabatean-farms/naba-farms46.jpg", title: "Page 46", },
+                    { src: "books/nabatean-farms/naba-farms47.jpg", title: "Page 47", },
+                    { src: "books/nabatean-farms/naba-farms48.jpg", title: "Page 48", },
+                    { src: "books/nabatean-farms/naba-farms49.jpg", title: "Page 49", },
+                    { src: "books/nabatean-farms/naba-farms50.jpg", title: "Page 50", },
+                    { src: "books/nabatean-farms/naba-farms51.jpg", title: "Page 51", },
+                    { src: "books/nabatean-farms/naba-farms52.jpg", title: "Page 52", },
+                    { src: "books/nabatean-farms/naba-farms53.jpg", title: "Page 53", },
+                    { src: "books/nabatean-farms/naba-farms54.jpg", title: "Page 54", },
+                    { src: "books/nabatean-farms/naba-farms55.jpg", title: "Page 55", },
+                    { src: "books/nabatean-farms/naba-farms56.jpg", title: "Page 56", },
+                    { src: "books/nabatean-farms/naba-farms57.jpg", title: "Page 57", },
+                    { src: "books/nabatean-farms/naba-farms58.jpg", title: "Page 58", },
+                    { src: "books/page-darkbg.jpg", title: "Last" }
+                ],
+                startPage: 2,
+                lightboxStartPage: 2,
+                lightBox: true,
+                lightboxResetOnOpen: true,
+                singlePageMode:true
+            });
+
+            $(".book-6").flipBook({
+                pages: [
+                    { src: "books/aljadidah-village/cover.jpg", title: "Cover Page", },
+                    { src: "books/aljadidah-village/index.png", title: "Intro Video", htmlContent: '<iframe width="1544" height="1000" src="books/aljadidah-village/intro.mp4" frameborder="0" allowfullscreen></iframe>' },
+                    { src: "books/aljadidah-village/aljadidah1.jpg", title: "Page 1", },
+                    { src: "books/aljadidah-village/aljadidah2.jpg", title: "Page 2", },
+                    { src: "books/aljadidah-village/aljadidah3.jpg", title: "Page 3", },
+                    { src: "books/aljadidah-village/aljadidah4.jpg", title: "Page 4", },
+                    { src: "books/aljadidah-village/aljadidah5.jpg", title: "Page 5", },
+                    { src: "books/aljadidah-village/aljadidah6.jpg", title: "Page 6", },
+                    { src: "books/aljadidah-village/aljadidah7.jpg", title: "Page 7", },
+                    { src: "books/aljadidah-village/aljadidah8.jpg", title: "Page 8", },
+                    { src: "books/aljadidah-village/aljadidah9.jpg", title: "Page 9", },
+                    { src: "books/aljadidah-village/aljadidah10.jpg", title: "Page 10", },
+                    { src: "books/aljadidah-village/aljadidah11.jpg", title: "Page 11", },
+                    { src: "books/aljadidah-village/aljadidah12.jpg", title: "Page 12", },
+                    { src: "books/aljadidah-village/aljadidah13.jpg", title: "Page 13", },
+                    { src: "books/aljadidah-village/aljadidah14.jpg", title: "Page 14", },
+                    { src: "books/aljadidah-village/aljadidah15.jpg", title: "Page 15", },
+                    { src: "books/aljadidah-village/aljadidah16.jpg", title: "Page 16", },
+                    { src: "books/aljadidah-village/aljadidah17.jpg", title: "Page 17", },
+                    { src: "books/aljadidah-village/aljadidah18.jpg", title: "Page 18", },
+                    { src: "books/aljadidah-village/aljadidah19.jpg", title: "Page 19", },
+                    { src: "books/aljadidah-village/aljadidah20.jpg", title: "Page 20", },
+                    { src: "books/aljadidah-village/aljadidah21.jpg", title: "Page 21", },
+                    { src: "books/aljadidah-village/aljadidah22.jpg", title: "Page 22", },
+                    { src: "books/aljadidah-village/aljadidah23.jpg", title: "Page 23", },
+                    { src: "books/aljadidah-village/aljadidah24.jpg", title: "Page 24", },
+                    { src: "books/aljadidah-village/aljadidah25.jpg", title: "Page 25", },
+                    { src: "books/aljadidah-village/aljadidah26.jpg", title: "Page 26", },
+                    { src: "books/aljadidah-village/aljadidah27.jpg", title: "Page 27", },
+                    { src: "books/aljadidah-village/aljadidah28.jpg", title: "Page 28", },
+                    { src: "books/aljadidah-village/aljadidah29.jpg", title: "Page 29", },
+                    { src: "books/aljadidah-village/aljadidah30.jpg", title: "Page 30", },
+                    { src: "books/aljadidah-village/aljadidah31.jpg", title: "Page 31", },
+                    { src: "books/aljadidah-village/aljadidah32.jpg", title: "Page 32", },
+                    { src: "books/page-darkbg.jpg", title: "Last" }
+                ],
+                startPage: 2,
+                lightboxStartPage: 2,
+                lightBox: true,
+                lightboxResetOnOpen: true,
+                singlePageMode:true
+            });
+            $(".top-17").flipBook({
+                pages: [
+                    { src: "books/top17/cover-main.jpg", title: "Cover Page", },
+                    { src: "books/top17/index.jpg", title: "Index Page", },
+                    { src: "books/top17/index.jpg", title: "Intro Video", htmlContent: '<iframe width="1340" height="1000" src="books/top17/intro.mp4" frameborder="0" allowfullscreen></iframe>' },
+                    { src: "books/top17/1.jpg", title: "Page 1", },
+                    { src: "books/top17/2.jpg", title: "Page 2", },
+                    { src: "books/top17/3.jpg", title: "Page 3", },
+                    { src: "books/top17/4.jpg", title: "Page 4", },
+                    { src: "books/top17/5.jpg", title: "Page 5", },
+                    { src: "books/top17/6.jpg", title: "Page 6", },
+                    { src: "books/top17/7.jpg", title: "Page 7", },
+                    { src: "books/top17/8.jpg", title: "Page 8", },
+                    { src: "books/top17/9.jpg", title: "Page 9", },
+                    { src: "books/top17/10.jpg", title: "Page 10", },
+                    { src: "books/top17/11.jpg", title: "Page 11", },
+                    { src: "books/top17/12.jpg", title: "Page 12", },
+                    { src: "books/top17/13.jpg", title: "Page 13", },
+                    { src: "books/top17/14.jpg", title: "Page 14", },
+                    { src: "books/top17/15.jpg", title: "Page 15", },
+                    { src: "books/top17/16.jpg", title: "Page 16", },
+                    { src: "books/top17/17.jpg", title: "Page 17", },
+                    { src: "books/top17/18.jpg", title: "Page 18", },
+                    { src: "books/top17/19.jpg", title: "Page 19", },
+                    { src: "books/top17/20.jpg", title: "Page 20", },
+                    { src: "books/top17/21.jpg", title: "Page 21", },
+                    { src: "books/top17/22.jpg", title: "Page 22", },
+                    { src: "books/top17/23.jpg", title: "Page 23", },
+                    { src: "books/top17/24.jpg", title: "Page 24", },
+                    { src: "books/top17/25.jpg", title: "Page 25", },
+                    { src: "books/top17/26.jpg", title: "Page 26", },
+                    { src: "books/top17/27.jpg", title: "Page 27", },
+                    { src: "books/top17/28.jpg", title: "Page 28", },
+                    { src: "books/top17/29.jpg", title: "Page 29", },
+                    { src: "books/top17/30.jpg", title: "Page 30", },
+                    { src: "books/top17/31.jpg", title: "Page 31", },
+                    { src: "books/top17/32.jpg", title: "Page 32", },
+                    { src: "books/top17/33.jpg", title: "Page 33", },
+                    { src: "books/top17/34.jpg", title: "Page 34", },
+                    { src: "books/page-darkbg.jpg", title: "Last" }
+                ],
+                startPage: 0,
+                lightboxStartPage: 0,
+                lightBox: true,
+                lightboxResetOnOpen: true,
+                singlePageMode:true
+            });
+
+            if (location.hash) {
+                $('.' + location.hash.substr(1)).click()
+
+                setTimeout(function () {
+                    $('[data-name="btnClose"]').click(function () {
+                        $('iframe').remove();
+                        location.reload();
+                    })
+                }, 3000);
+            }
+        })
+    </script>
+
+    <style type="text/css">
+        @font-face {
+            font-family: 'HelveticaNeue';
+            src: url('fonts/HelveticaNeue.ttf');
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        /*css for cover page starts here*/
+        .book{
+            transform: scale(1) !important;
+        }
+
+        .flipbook-bookLayer{
+            height: 100vh;
+        }
+
+        .flipbook-menuBottom, .flipbook-menu-btn{
+            display: none;
+        }
+
+        body.flipbook-overflow-hidden .flipbook-overlay {
+            /* top: 260px !important; */ /*after moving from the cover page this css will be applied*/
+            top: 0px !important;
+            background: none !important;
+        }
+
+         /*css for cover page ends here*/
+
+        .flipbook-currentPageHolder{
+            display: none !important;
+        }
+
+        body.flipbook-overflow-hidden .bookshelf {
+            position: fixed;
+            top: 150px;
+            transition: 0.5s;
+        }
+
+        body.flipbook-overflow-hidden .bookshelf .thumb h2 {
+            font-size: 18px;
+            margin-top: -40px;
+        }
+
+        body.flipbook-overflow-hidden .bookshelf .thumb {
+            width: 260px !important;
+        }
+
+        body.flipbook-overflow-hidden .bookshelf .thumb img {
+            width: 55%;
+            margin: 0 auto;
+        }
+
+        .bookshelf .thumb {
+            display: inline-block;
+            cursor: pointer;
+            margin: 0px 0.5%;
+            width: 350px !important;
+            /* box-shadow: 0px 1px 3px rgba(0, 0, 0, .3); */
+            max-width: 350px;
+        }
+
+        .bookshelf .thumb h2 {
+            font-size: 30px;
+            font-family: 'HelveticaNeue';
+            font-weight: bold;
+            letter-spacing: 2px;
+            line-height: 38px;
+            /* background-color: #222;
+            color: #fff; */
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .bookshelf .thumb img {
+            width: 100%;
+            display: block;
+        }
+
+        .bookshelf .shelf-img {
+            z-index: 0;
+            height: auto;
+            max-width: 100%;
+            vertical-align: top;
+            margin-top: -12px;
+        }
+
+        .bookshelf .covers {
+            width: 100%;
+            height: auto;
+            z-index: 99;
+            position: relative;
+            text-align: center;
+        }
+
+        .bookshelf {
+            text-align: center;
+            padding: 0px;
+            width: 100%;
+        }
+
+        .thumbnail {
+            /* background-color: #dbdbdb; */
+            padding: 40px;
+        }
+        body.flipbook-overflow-hidden .bookshelf .thumb.active h2 {
+            color: #c2ab83;
+        }
+        .container{
+            width: 100vw !important;
+            height: 100vh !important;
+        }
+    </style>
+</head>
+
+<body>
+<div class="bookshelf">
+    <div class="covers">
+        <div class="thumb" onclick="closeModal('top-17')" id="top-17">
+            <!-- <div class="thumbnail">
+                <img src="images/icons/naba-farms.png" alt="">
+            </div> -->
+            <h2>TOP 17</h2>
+        </div>
+        <div class="thumb" onclick="closeModal('book-5')" id="book-5">
+            <!-- <div class="thumbnail">
+                <img src="images/icons/naba-farms.png" alt="">
+            </div> -->
+            <h2>NABATAEAN FARMS</h2>
+        </div>
+        <div class="thumb" onclick="closeModal('book-3')" id="book-3">
+            <!-- <div class="thumbnail">
+                <img src="images/icons/oasis.png" alt="">
+            </div> -->
+            <h2>OASIS FARMS</h2>
+        </div>
+        <div class="thumb" onclick="closeModal('book-1')" id="book-1">
+            <!-- <div class="thumbnail">
+                <img src="images/icons/dadan.png" alt="">
+            </div> -->
+            <h2>DADAN VILLAGE</h2>
+        </div>
+        <div class="thumb" onclick="closeModal('book-2')" id="book-2">
+            <!-- <div class="thumbnail">
+                <img src="images/icons/alula.png" alt="">
+            </div> -->
+            <h2>ALULA CENTRAL</h2>
+        </div>
+        <div class="thumb" onclick="closeModal('book-4')" id="book-4">
+            <!-- <div class="thumbnail">
+                <img src="images/icons/naba-village.png" alt="">
+            </div> -->
+            <h2>NABATEAN VILLAGE</h2>
+        </div>
+        <div class="thumb" onclick="closeModal('book-6')" id="book-6">
+            <!-- <div class="thumbnail">
+                <img src="images/icons/aljadidah.png" alt="">
+            </div> -->
+            <h2>ALJADIDAH VILLAGE</h2>
+        </div>
+    </div>
+</div>
+<div class="container book-1"></div>
+<div class="container book-2"></div>
+<div class="container book-3"></div>
+<div class="container book-4"></div>
+<div class="container book-5"></div>
+<div class="container book-6"></div>
+<div class="container top-17"></div>
+
+<script>
+    function closeModal(cls) {
+        window.location = window.location.origin + window.location.pathname + '#' + cls
+        location.reload();
+    }
+
+    if (location.hash.substr(1)) {
+        document.getElementById(location.hash.substr(1)).classList.add('active')
+    }
+</script>
+</body>
+</html>
