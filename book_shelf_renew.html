@@ -46,9 +46,10 @@
 
         body.flipbook-overflow-hidden .bookshelf {
             position: fixed;
-            top: 150px;
+            top: 100px;
             transition: 0.5s;
         }
+        
 
         body.flipbook-overflow-hidden .bookshelf .thumb h2 {
             font-size: 18px;
@@ -124,6 +125,18 @@
         .container{
             width: 100vw !important;
             height: 100vh !important;
+        }
+        @media (max-width: 1080px){
+            body.flipbook-overflow-hidden .bookshelf {
+                top: 50px;
+                transition: 0.5s;
+            }
+            .flipbook-overlay{
+                top: 110px !important;
+            }
+            body.flipbook-overflow-hidden .bookshelf .thumb{
+                width: 220px !important;
+            }
         }
     </style>
 
