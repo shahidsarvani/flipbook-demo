@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/flipbook.style.css">
+    <script src="js/flipbook.min.js"></script>
+    <script type="text/javascript">
+
+    $(document).ready(function () {
+        $(".book-1").flipBook({
+            pages:[
+            { src: "books/dadan-village/index.png", title: "Intro Video", htmlContent: '<video width="100%" height="1000px" controls autoplay muted><source src="books/dadan-village/intro.mp4" type="video/mp4"><source src="movie.ogg" type="video/ogg">Your browser does not support the video tag.</video>' },
+            { src: "books/dadan-village/index.png", title: "Intro Video",}
+            ],
+			singlePageMode:true
+        });
+    })
+</script>
+<style type="text/css">
+    .flipbook-main-wrapper {
+        background: #ffffff !important;
+    }
+    @font-face {
+        font-family: 'HelveticaNeue';
+        src: url('fonts/HelveticaNeue.ttf');
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .flipbook-currentPageHolder{
+        display: none !important;
+    }
+
+    body.flipbook-overflow-hidden .bookshelf {
+        position: fixed;
+        top: 150px;
+        transition: 0.5s;
+    }
+
+    body.flipbook-overflow-hidden .flipbook-overlay {
+        top: 260px !important;
+        background: none !important;
+    }
+
+    body.flipbook-overflow-hidden .bookshelf .thumb h2 {
+        font-size: 18px;
+        margin-top: -40px;
+    }
+
+    body.flipbook-overflow-hidden .bookshelf .thumb {
+        width: 260px !important;
+    }
+
+    body.flipbook-overflow-hidden .bookshelf .thumb img {
+        width: 55%;
+        margin: 0 auto;
+    }
+
+    .bookshelf .thumb {
+        display: inline-block;
+        cursor: pointer;
+        margin: 0px 0.5%;
+        width: 350px !important;
+        /* box-shadow: 0px 1px 3px rgba(0, 0, 0, .3); */
+        max-width: 350px;
+    }
+
+    .bookshelf .thumb h2 {
+        font-size: 30px;
+        font-family: 'HelveticaNeue';
+        font-weight: bold;
+        letter-spacing: 2px;
+        line-height: 38px;
+        /* background-color: #222;
+        color: #fff; */
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .bookshelf .thumb img {
+        width: 100%;
+        display: block;
+    }
+
+    .bookshelf .shelf-img {
+        z-index: 0;
+        height: auto;
+        max-width: 100%;
+        vertical-align: top;
+        margin-top: -12px;
+    }
+
+    .bookshelf .covers {
+        width: 100%;
+        height: auto;
+        z-index: 99;
+        position: relative;
+        text-align: center;
+    }
+
+    .bookshelf {
+        text-align: center;
+        padding: 0px;
+        width: 100%;
+    }
+
+    .thumbnail {
+        /* background-color: #dbdbdb; */
+        padding: 40px;
+    }
+    body.flipbook-overflow-hidden .bookshelf .thumb.active h2 {
+        color: #c2ab83;
+    }
+    #container{
+        width: 100vw !important;
+        height: 100vh !important;
+    }
+</style>
+</head>
+	<body>
+        <div id="container" class="book-1" style="position:absolute;width:500px;height:690px"></div>
+	</body>
+</html>
