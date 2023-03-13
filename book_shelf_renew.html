@@ -17,7 +17,7 @@
             height: 100vh;
         }
         .bookshelf {
-            display: none;
+            /*display: none;*/
         }
         /*!*css for cover page starts here*!*/
         /*.book{*/
@@ -49,7 +49,7 @@
             top: 100px;
             transition: 0.5s;
         }
-        
+
 
         body.flipbook-overflow-hidden .bookshelf .thumb h2 {
             font-size: 18px;
@@ -501,14 +501,18 @@
                 }, 3000);
             }
             jQuery(top_17).bind("pagechange", function(e){
+                console.log(e)
                 if (e.page !== '1') {
                     $('.book').css('transform', 'inherit !important');
-                    $('.bookshelf').css("display", "block");
+                    $('.bookshelf').show(250).fadeIn();
                     $('.flipbook-bookLayer').css("height", "auto");
-                    $('.flipbook-menuBottom').css("display", "block");
-                    $('.flipbook-menu-btn').css("display", "block");
+                    $('.flipbook-menuBottom').css("display", "block").delay(25000).fadeIn();
+                    $('.flipbook-menu-btn').css("display", "block").delay(25000).fadeIn();
                     $('body.flipbook-overflow-hidden .flipbook-overlay').attr("style", "top: 150px !important");
                     $('body.flipbook-overflow-hidden .flipbook-overlay').css("background", "block !important");
+                }
+                else {
+                    $('.bookshelf').hide();
                 }
             });
         })
