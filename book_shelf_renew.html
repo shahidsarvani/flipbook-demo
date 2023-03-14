@@ -141,6 +141,9 @@
                 width: 220px !important;
             }
         }
+        body.flipbook-overflow-hidden .flipbook-overlay {
+            margin-top: 150px;
+        }
     </style>
 
     <script src="js/flipbook.min.js"></script>
@@ -480,22 +483,7 @@
                 lightBox: true,
                 lightboxResetOnOpen: true,
                 singlePageMode:true,
-                onbookcreated:function(){
-                    console.log("onbookcreated()")
-                },
-                onfullscreenenter:function(){
-                    console.log("onfullscreenenter()")
-                },
-                onfullscreenexit:function(){
-                    console.log("onfullscreenexit()")
-                },
-
             });
-
-            top_17.on('flipBook.change', function(event, page, view) {
-                console.log(event, page, view)
-            });
-
 
             if (location.hash) {
                 $('.' + location.hash.substr(1)).click()
@@ -507,126 +495,113 @@
                     })
                 }, 3000);
             }
+
             jQuery(book_1).bind("pagechange", function(e){
                 console.log(e.page)
                 if (e.page !== '2') {
-                    $('.book').css('transform', 'inherit !important');
+
                     $('.bookshelf').show(250).fadeIn();
                     $('.flipbook-bookLayer').css("height", "auto");
                     $('.flipbook-menuBottom').css("display", "block").delay(25000).fadeIn();
                     $('.flipbook-menu-btn').css("display", "block").delay(25000).fadeIn();
-                    $('body.flipbook-overflow-hidden .flipbook-overlay').attr("style", "top: 150px !important");
+                    // $('body.flipbook-overflow-hidden .flipbook-overlay').attr("style", "top: 150px !important");
                     $('body.flipbook-overflow-hidden .flipbook-overlay').css("background", "block !important");
                 }
-                else {
-                    $('.bookshelf').hide();
-                }
+                // else {
+                //     $('.bookshelf').hide();
+                // }
             });
             jQuery(book_2).bind("pagechange", function(e){
                 console.log(e.page)
-                if (e.page !== '2') {
-                    $('.book').css('transform', 'inherit !important');
+                // if (e.page !== '2') {
+
                     $('.bookshelf').show(250).fadeIn();
                     $('.flipbook-bookLayer').css("height", "auto");
                     $('.flipbook-menuBottom').css("display", "block").delay(25000).fadeIn();
                     $('.flipbook-menu-btn').css("display", "block").delay(25000).fadeIn();
-                    $('body.flipbook-overflow-hidden .flipbook-overlay').attr("style", "top: 150px !important");
+                    // $('body.flipbook-overflow-hidden .flipbook-overlay').attr("style", "top: 150px !important");
                     $('body.flipbook-overflow-hidden .flipbook-overlay').css("background", "block !important");
-                }
-                else {
-                    $('.bookshelf').hide();
-                }
+                // }
+                // else {
+                //     $('.bookshelf').hide();
+                // }
             });
             jQuery(book_3).bind("pagechange", function(e){
                 console.log(e.page)
-                if (e.page !== '2') {
-                    $('.book').css('transform', 'inherit !important');
+                // if (e.page !== '2') {
+
                     $('.bookshelf').show(250).fadeIn();
                     $('.flipbook-bookLayer').css("height", "auto");
                     $('.flipbook-menuBottom').css("display", "block").delay(25000).fadeIn();
                     $('.flipbook-menu-btn').css("display", "block").delay(25000).fadeIn();
-                    $('body.flipbook-overflow-hidden .flipbook-overlay').attr("style", "top: 150px !important");
+                    // $('body.flipbook-overflow-hidden .flipbook-overlay').attr("style", "top: 150px !important");
                     $('body.flipbook-overflow-hidden .flipbook-overlay').css("background", "block !important");
-                }
-                else {
-                    $('.bookshelf').hide();
-                }
+                // }
+                // else {
+                //     $('.bookshelf').hide();
+                // }
             });
             jQuery(book_4).bind("pagechange", function(e){
                 console.log(e.page)
-                if (e.page !== '2') {
-                    $('.book').css('transform', 'inherit !important');
+                // if (e.page !== '2') {
+
                     $('.bookshelf').show(250).fadeIn();
                     $('.flipbook-bookLayer').css("height", "auto");
                     $('.flipbook-menuBottom').css("display", "block").delay(25000).fadeIn();
                     $('.flipbook-menu-btn').css("display", "block").delay(25000).fadeIn();
-                    $('body.flipbook-overflow-hidden .flipbook-overlay').attr("style", "top: 150px !important");
+                    // $('body.flipbook-overflow-hidden .flipbook-overlay').attr("style", "top: 150px !important");
                     $('body.flipbook-overflow-hidden .flipbook-overlay').css("background", "block !important");
-                }
-                else {
-                    $('.bookshelf').hide();
-                }
+                // }
+                // else {
+                //     $('.bookshelf').hide();
+                // }
             });
             jQuery(book_5).bind("pagechange", function(e){
                 console.log(e.page)
-                if (e.page !== '2') {
-                    $('.book').css('transform', 'inherit !important');
+                // if (e.page !== '2') {
+
                     $('.bookshelf').show(250).fadeIn();
                     $('.flipbook-bookLayer').css("height", "auto");
                     $('.flipbook-menuBottom').css("display", "block").delay(25000).fadeIn();
                     $('.flipbook-menu-btn').css("display", "block").delay(25000).fadeIn();
-                    $('body.flipbook-overflow-hidden .flipbook-overlay').attr("style", "top: 150px !important");
+                    // $('body.flipbook-overflow-hidden .flipbook-overlay').attr("style", "top: 150px !important");
                     $('body.flipbook-overflow-hidden .flipbook-overlay').css("background", "block !important");
-                }
-                else {
-                    $('.bookshelf').hide();
-                }
+                // }
+                // else {
+                //     $('.bookshelf').hide();
+                // }
             });
             jQuery(book_6).bind("pagechange", function(e){
-                console.log(e.page)
-                if (e.page !== '2') {
-                    $('.book').css('transform', 'inherit !important');
+                console.log(e)
+                // if (e.page !== '2') {
+
                     $('.bookshelf').show(250).fadeIn();
                     $('.flipbook-bookLayer').css("height", "auto");
                     $('.flipbook-menuBottom').css("display", "block").delay(25000).fadeIn();
                     $('.flipbook-menu-btn').css("display", "block").delay(25000).fadeIn();
-                    $('body.flipbook-overflow-hidden .flipbook-overlay').attr("style", "top: 150px !important");
+                    // $('body.flipbook-overflow-hidden .flipbook-overlay').attr("style", "top: 150px !important");
                     $('body.flipbook-overflow-hidden .flipbook-overlay').css("background", "block !important");
-                }
-                else {
-                    $('.bookshelf').hide();
-                }
+                // }
+                // else {
+                //     $('.bookshelf').hide();
+                // }
             });
             jQuery(top_17).bind("pagechange", function(e){
-                console.log(e.page)
+                console.log(e)
                 if (e.page !== '1') {
-                    $('.book').css('transform', 'inherit !important');
+
                     $('.bookshelf').show(250).fadeIn();
                     $('.flipbook-bookLayer').css("height", "auto");
                     $('.flipbook-menuBottom').css("display", "block").delay(25000).fadeIn();
                     $('.flipbook-menu-btn').css("display", "block").delay(25000).fadeIn();
-                    $('body.flipbook-overflow-hidden .flipbook-overlay').attr("style", "top: 150px !important");
+                    // $('body.flipbook-overflow-hidden .flipbook-overlay').attr("style", "top: 150px !important");
                     $('body.flipbook-overflow-hidden .flipbook-overlay').css("background", "block !important");
                 }
                 else {
                     $('.bookshelf').hide();
                 }
             });
-            jQuery(top_17).bind("pagechange", function(e){
-                console.log(e.page)
-                if (e.page !== '1') {
-                    $('.book').css('transform', 'inherit !important');
-                    $('.bookshelf').show(250).fadeIn();
-                    $('.flipbook-bookLayer').css("height", "auto");
-                    $('.flipbook-menuBottom').css("display", "block").delay(25000).fadeIn();
-                    $('.flipbook-menu-btn').css("display", "block").delay(25000).fadeIn();
-                    $('body.flipbook-overflow-hidden .flipbook-overlay').attr("style", "top: 150px !important");
-                    $('body.flipbook-overflow-hidden .flipbook-overlay').css("background", "block !important");
-                }
-                else {
-                    $('.bookshelf').hide();
-                }
-            });
+
         })
     </script>
 
