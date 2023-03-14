@@ -146,7 +146,7 @@
     <script src="js/flipbook.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
-            $(".book-1").flipBook({
+            let book_1 = $(".book-1").flipBook({
                 pages: [
                     { src: "books/top17/cover-main.jpg", title: "Cover Page", },
                     { src: "books/dadan-village/index.png", title: "Index Page", },
@@ -186,7 +186,7 @@
                 singlePageMode:true
             });
 
-            $(".book-2").flipBook({
+            let book_2 = $(".book-2").flipBook({
                 pages: [
                     { src: "books/top17/cover-main.jpg", title: "Cover Page", },
                     { src: "books/alula-central/index.png", title: "Intro Video", htmlContent: '<video width="100%" height="1000px" controls autoplay muted><source src="books/alula-central/intro.mp4" type="video/mp4"><source src="movie.ogg" type="video/ogg">Your browser does not support the video tag.</video>' },
@@ -217,7 +217,7 @@
                 singlePageMode:true
             });
 
-            $(".book-3").flipBook({
+            let book_3 = $(".book-3").flipBook({
                 pages: [
                     { src: "books/top17/cover-main.jpg", title: "Cover Page", },
                     { src: "books/oasis-farms/index.png", title: "Intro Video", htmlContent: '<video width="100%" height="1000px" controls autoplay muted><source src="books/oasis-farms/intro.mp4" type="video/mp4"><source src="movie.ogg" type="video/ogg">Your browser does not support the video tag.</video>' },
@@ -281,7 +281,7 @@
                 singlePageMode:true
             });
 
-            $(".book-4").flipBook({
+            let book_4 = $(".book-4").flipBook({
                 pages: [
                     { src: "books/top17/cover-main.jpg", title: "Cover Page", },
                     { src: "books/nabatean-village/index.png", title: "Intro Video", htmlContent: '<video width="100%" height="1000px" controls autoplay muted><source src="books/nabatean-village/intro.mp4" type="video/mp4"><source src="movie.ogg" type="video/ogg">Your browser does not support the video tag.</video>' },
@@ -308,7 +308,7 @@
                 singlePageMode:true
             });
 
-            $(".book-5").flipBook({
+            let book_5 = $(".book-5").flipBook({
                 pages: [
                     { src: "books/top17/cover-main.jpg", title: "Cover Page", },
                     { src: "books/nabatean-farms/index.jpg", title: "Intro Video", htmlContent: '<video width="100%" height="1000px" controls autoplay muted><source src="books/nabatean-farms/intro.mp4" type="video/mp4"><source src="movie.ogg" type="video/ogg">Your browser does not support the video tag.</video>' },
@@ -383,7 +383,7 @@
                 singlePageMode:true
             });
 
-            $(".book-6").flipBook({
+            let book_6 = $(".book-6").flipBook({
                 pages: [
                     { src: "books/top17/cover-main.jpg", title: "Cover Page", },
                     { src: "books/aljadidah-village/index.png", title: "Intro Video", htmlContent: '<video width="100%" height="1000px" controls autoplay muted><source src="books/aljadidah-village/intro.mp4" type="video/mp4"><source src="movie.ogg" type="video/ogg">Your browser does not support the video tag.</video>' },
@@ -427,6 +427,7 @@
                 lightboxResetOnOpen: true,
                 singlePageMode:true
             });
+
             let top_17 = $(".top-17").flipBook({
                 pages: [
                     { src: "books/top17/cover-main.jpg", title: "Cover Page", },
@@ -500,8 +501,113 @@
                     })
                 }, 3000);
             }
+            jQuery(book_1).bind("pagechange", function(e){
+                console.log(e.page)
+                if (e.page !== '2') {
+                    $('.book').css('transform', 'inherit !important');
+                    $('.bookshelf').show(250).fadeIn();
+                    $('.flipbook-bookLayer').css("height", "auto");
+                    $('.flipbook-menuBottom').css("display", "block").delay(25000).fadeIn();
+                    $('.flipbook-menu-btn').css("display", "block").delay(25000).fadeIn();
+                    $('body.flipbook-overflow-hidden .flipbook-overlay').attr("style", "top: 150px !important");
+                    $('body.flipbook-overflow-hidden .flipbook-overlay').css("background", "block !important");
+                }
+                else {
+                    $('.bookshelf').hide();
+                }
+            });
+            jQuery(book_2).bind("pagechange", function(e){
+                console.log(e.page)
+                if (e.page !== '2') {
+                    $('.book').css('transform', 'inherit !important');
+                    $('.bookshelf').show(250).fadeIn();
+                    $('.flipbook-bookLayer').css("height", "auto");
+                    $('.flipbook-menuBottom').css("display", "block").delay(25000).fadeIn();
+                    $('.flipbook-menu-btn').css("display", "block").delay(25000).fadeIn();
+                    $('body.flipbook-overflow-hidden .flipbook-overlay').attr("style", "top: 150px !important");
+                    $('body.flipbook-overflow-hidden .flipbook-overlay').css("background", "block !important");
+                }
+                else {
+                    $('.bookshelf').hide();
+                }
+            });
+            jQuery(book_3).bind("pagechange", function(e){
+                console.log(e.page)
+                if (e.page !== '2') {
+                    $('.book').css('transform', 'inherit !important');
+                    $('.bookshelf').show(250).fadeIn();
+                    $('.flipbook-bookLayer').css("height", "auto");
+                    $('.flipbook-menuBottom').css("display", "block").delay(25000).fadeIn();
+                    $('.flipbook-menu-btn').css("display", "block").delay(25000).fadeIn();
+                    $('body.flipbook-overflow-hidden .flipbook-overlay').attr("style", "top: 150px !important");
+                    $('body.flipbook-overflow-hidden .flipbook-overlay').css("background", "block !important");
+                }
+                else {
+                    $('.bookshelf').hide();
+                }
+            });
+            jQuery(book_4).bind("pagechange", function(e){
+                console.log(e.page)
+                if (e.page !== '2') {
+                    $('.book').css('transform', 'inherit !important');
+                    $('.bookshelf').show(250).fadeIn();
+                    $('.flipbook-bookLayer').css("height", "auto");
+                    $('.flipbook-menuBottom').css("display", "block").delay(25000).fadeIn();
+                    $('.flipbook-menu-btn').css("display", "block").delay(25000).fadeIn();
+                    $('body.flipbook-overflow-hidden .flipbook-overlay').attr("style", "top: 150px !important");
+                    $('body.flipbook-overflow-hidden .flipbook-overlay').css("background", "block !important");
+                }
+                else {
+                    $('.bookshelf').hide();
+                }
+            });
+            jQuery(book_5).bind("pagechange", function(e){
+                console.log(e.page)
+                if (e.page !== '2') {
+                    $('.book').css('transform', 'inherit !important');
+                    $('.bookshelf').show(250).fadeIn();
+                    $('.flipbook-bookLayer').css("height", "auto");
+                    $('.flipbook-menuBottom').css("display", "block").delay(25000).fadeIn();
+                    $('.flipbook-menu-btn').css("display", "block").delay(25000).fadeIn();
+                    $('body.flipbook-overflow-hidden .flipbook-overlay').attr("style", "top: 150px !important");
+                    $('body.flipbook-overflow-hidden .flipbook-overlay').css("background", "block !important");
+                }
+                else {
+                    $('.bookshelf').hide();
+                }
+            });
+            jQuery(book_6).bind("pagechange", function(e){
+                console.log(e.page)
+                if (e.page !== '2') {
+                    $('.book').css('transform', 'inherit !important');
+                    $('.bookshelf').show(250).fadeIn();
+                    $('.flipbook-bookLayer').css("height", "auto");
+                    $('.flipbook-menuBottom').css("display", "block").delay(25000).fadeIn();
+                    $('.flipbook-menu-btn').css("display", "block").delay(25000).fadeIn();
+                    $('body.flipbook-overflow-hidden .flipbook-overlay').attr("style", "top: 150px !important");
+                    $('body.flipbook-overflow-hidden .flipbook-overlay').css("background", "block !important");
+                }
+                else {
+                    $('.bookshelf').hide();
+                }
+            });
             jQuery(top_17).bind("pagechange", function(e){
-                console.log(e)
+                console.log(e.page)
+                if (e.page !== '1') {
+                    $('.book').css('transform', 'inherit !important');
+                    $('.bookshelf').show(250).fadeIn();
+                    $('.flipbook-bookLayer').css("height", "auto");
+                    $('.flipbook-menuBottom').css("display", "block").delay(25000).fadeIn();
+                    $('.flipbook-menu-btn').css("display", "block").delay(25000).fadeIn();
+                    $('body.flipbook-overflow-hidden .flipbook-overlay').attr("style", "top: 150px !important");
+                    $('body.flipbook-overflow-hidden .flipbook-overlay').css("background", "block !important");
+                }
+                else {
+                    $('.bookshelf').hide();
+                }
+            });
+            jQuery(top_17).bind("pagechange", function(e){
+                console.log(e.page)
                 if (e.page !== '1') {
                     $('.book').css('transform', 'inherit !important');
                     $('.bookshelf').show(250).fadeIn();
