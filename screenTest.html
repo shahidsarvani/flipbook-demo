@@ -1,0 +1,32 @@
+<html>
+<head>
+<script>
+function getScreenResolution()
+{
+	var width = screen.width,
+        height = screen.height;
+	document.getElementById("scnRes").innerHTML = width + " x " + height;
+}
+
+/*(function () {
+    var width = screen.width,
+        height = screen.height;
+	console.log("W x H: " + width + " x " + height);
+	console.log(document.getElementById("scnRes"));
+	
+    setInterval(function () {
+        if (screen.width !== width || screen.height !== height) {
+            width = screen.width;
+            height = screen.height;
+            $(window).trigger('resolutionchange');
+        }
+    }, 50);
+}());*/
+</script>
+</head>
+<body>
+<div>Screen Resolution Test</div>
+<h1 id="scnRes"></h1>
+<button type="button" onclick="getScreenResolution();">Click Me!</button>
+</body>
+</html>
