@@ -152,6 +152,28 @@
         body.flipbook-overflow-hidden .bookshelf{
             margin-left: -115px;
         }
+        video{
+            position: relative;
+        }
+        video::-webkit-media-controls-play-button{
+            position: fixed;
+            top: 45%;
+            left: 50%;
+            width: 30px;
+            height: 48px;
+            border-radius: 250px;
+            background-color: rgba(0, 0, 0, 0.596);
+        }
+        video::-webkit-media-controls-volume-slider-container, video::-webkit-media-controls-volume-slider, video::-webkit-media-controls-mute-button, video::-webkit-media-controls-timeline, video::-webkit-media-controls-current-time-display, video::-webkit-media-controls-timeline-container, video::-webkit-media-controls-time-remaining-display, video::-webkit-media-controls-seek-back-button, video::-webkit-media-controls-seek-forward-button, video::-webkit-media-controls-fullscreen-button, video::-webkit-media-controls-rewind-button, video::-webkit-media-controls-return-to-realtime-button, video::-webkit-media-controls-toggle-closed-captions-button{
+            display: none;
+        }
+        video::-webkit-media-controls-panel{
+            background-color: none !important;
+            background: none !important;
+        }
+        /* video::-webkit-media-controls-panel{
+            visibility: hidden;
+        } */
         @media (min-width: 1500px) and (max-width: 1590px){
             .book img{
                 max-width: 100% !important;
@@ -166,9 +188,12 @@
                 margin: 0 auto 0 0px !important;
             }
             video{
-                height: calc(54vh - 157px) !important;
+                /* height: calc(54vh - 157px) !important;
                 width: 1590px !important;
-                margin-left: -400px !important;
+                margin-left: -400px !important; */
+                height: calc(54vh - 155px) !important;
+                width: 870px !important;
+                margin-left: -45px !important;
             }
         }
     </style>
@@ -468,7 +493,7 @@
                 pages: [
                     { src: "books/top17/cover-main.jpg", title: "Cover Page", },
                     { src: "books/top17/index.jpg", title: "Index Page", },
-                    { src: "books/top17/index.jpg", title: "Intro Video", htmlContent: '<video width="100%" height="904px" autoplay muted><source src="books/top17/intro.mp4" type="video/mp4"><source src="movie.ogg" type="video/ogg">Your browser does not support the video tag.</video>' },
+                    { src: "books/top17/index.jpg", title: "Intro Video", htmlContent: '<video width="100%" height="904px" controls><source src="books/top17/intro.mp4" type="video/mp4"><source src="movie.ogg" type="video/ogg">Your browser does not support the video tag.</video>' },
                     { src: "books/top17/1.jpg", title: "Page 1", },
                     { src: "books/top17/2.jpg", title: "Page 2", },
                     { src: "books/top17/3.jpg", title: "Page 3", },
