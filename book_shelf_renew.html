@@ -149,6 +149,25 @@
         body.flipbook-overflow-hidden .flipbook-overlay {
             margin-top: 150px;
         }
+        @media (max-width: 1590px){
+            .book img{
+                max-width: 100% !important;
+                position: relative !important;
+                height: calc(85vh - 0px) !important;
+                margin: 0 auto 0 120px !important;
+                float: none;
+                text-align: center;
+            }
+            .book .flipbook-center-container3 .flipbook-page3:first-child img{
+                height: calc(100vh - 0px) !important;
+                margin: 0 auto 0 0px !important;
+            }
+            video{
+                height: calc(54vh - 157px) !important;
+                width: 1590px !important;
+                margin-left: -400px !important;
+            }
+        }
     </style>
 
     <script src="js/flipbook.min.js"></script>
