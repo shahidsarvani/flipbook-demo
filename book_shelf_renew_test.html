@@ -214,7 +214,7 @@
     
     <script type="text/javascript">
         $(document).ready(function () {
-            let book_1 = $(".book-1").flipBook({
+            window.book_1 = $(".book-1").flipBook({
                 pages: [
                     { src: "books/top17/cover-main.jpg", title: "Cover Page", },
                     { src: "books/dadan-village/dadan-village.jpg", title: "Index Page", htmlContent: '<a class="test-text-btn" href="#" onclick="if(book_1.Book){book_1.Book.goToPage(4,true)}else{book_1.options.startPage = 3}">open book page 4</a>'},
@@ -252,7 +252,9 @@
                 lightBox: true,
                 lightboxResetOnOpen: true,
                 singlePageMode: true,
-                sound: false
+                sound: false,
+                deeplinkingPrefix:"book-1_",
+                deeplinking: { enabled: true, prefix: "" }
             });
 
             let book_2 = $(".book-2").flipBook({

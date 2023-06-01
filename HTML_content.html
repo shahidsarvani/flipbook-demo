@@ -11,27 +11,34 @@
 
     <script src="js/flipbook.min.js"></script>
 
+    <style>
+        .test-text-btn{
+
+            font-size: 120px;
+        }
+    </style>
+
     <script type="text/javascript">
 
         $(document).ready(function () {
-            $("#container").flipBook({
+            window.book_1 = $("#container").flipBook({
                 pages: [
                     {
-                        src: "images/book2/page1.jpg",
-                        thumb: "images/book2/thumb1.jpg",
+                        src: "books/dadan-village/dadan1.jpg",
+                        thumb: "books/dadan-village/dadan1.jpg",
                         title: "Cover",
-                        htmlContent: '<a href="3d.html">link to 3d flipbook</a><p style="color:#FFF">HTML Content on the page</p><div style="position:absolute;top:400px;"><iframe width="640" height="390" src="videos/sample.mp4" frameborder="0" allowfullscreen></iframe></div>'
+                        htmlContent: '<a class="test-text-btn" href="#" onclick="if(book_1.Book){book_1.Book.goToPage(4,true)}else{book_1.options.startPage = 3}">open book page 4</a>'
                     },
                     {
-                        src: "images/book2/page2.jpg", thumb: "images/book2/thumb2.jpg", title: "Page two",
+                        src: "books/dadan-village/dadan2.jpg", thumb: "books/dadan-village/dadan2.jpg", title: "Page two",
                         htmlContent: '<iframe width="707" height="1000" src="page_iframe.html" frameborder="0" allowfullscreen></iframe>'
                     },
-                    { src: "images/book2/page3.jpg", thumb: "images/book2/thumb3.jpg", title: "Page three" },
-                    { src: "images/book2/page4.jpg", thumb: "images/book2/thumb4.jpg", title: "" },
-                    { src: "images/book2/page5.jpg", thumb: "images/book2/thumb5.jpg", title: "Page five" },
-                    { src: "images/book2/page6.jpg", thumb: "images/book2/thumb6.jpg", title: "Page six" },
-                    { src: "images/book2/page7.jpg", thumb: "images/book2/thumb7.jpg", title: "Page seven" },
-                    { src: "images/book2/page8.jpg", thumb: "images/book2/thumb8.jpg", title: "Last" }
+                    {src:"books/dadan-village/dadan3.jpg", thumb:"books/dadan-village/dadan3.jpg", title:"Page three"},
+                    {src:"books/dadan-village/dadan4.jpg", thumb:"books/dadan-village/dadan4.jpg", title:""},
+                    {src:"books/dadan-village/dadan5.jpg", thumb:"books/dadan-village/dadan5.jpg", title:"Page five"},
+                    {src:"books/dadan-village/dadan6.jpg", thumb:"books/dadan-village/dadan6.jpg", title:"Page six"},
+                    {src:"books/dadan-village/dadan7.jpg", thumb:"books/dadan-village/dadan7.jpg", title:"Page seven"},
+                    {src:"books/dadan-village/dadan8.jpg", thumb:"books/dadan-village/dadan8.jpg", title:"Last"}
                 ], zoomLevels: [0.9, 3], deeplinking: { enabled: true, prefix: "" }
             });
 
