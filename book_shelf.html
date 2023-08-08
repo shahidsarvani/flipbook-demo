@@ -391,6 +391,7 @@
                 lightboxResetOnOpen: true,
                 sound: false // removes the page flip sound
             });
+            
             $(".top-17").flipBook({
                 pages: [
                     { src: "books/top17/cover.jpg", title: "Cover Page", },
@@ -431,6 +432,18 @@
                     { src: "books/top17/34.jpg", title: "Page 34", },
                     { src: "books/page-darkbg.jpg", title: "Last" }
                 ],
+                startPage: 2,
+                lightboxStartPage: 2,
+                lightBox: true,
+                lightboxResetOnOpen: true,
+                sound: false // removes the page flip sound
+            });
+            
+            $(".home").flipBook({
+                pages: [
+                    { src: "books/cover.jpg", title: "Cover Page", },
+                    { src: "books/page-darkbg.jpg", title: "Last" }
+                ],
                 startPage: 0,
                 lightboxStartPage: 0,
                 lightBox: true,
@@ -456,6 +469,12 @@
 <body>
 <div class="bookshelf">
     <div class="covers">
+        <div class="thumb" onclick="closeModal('home')" id="home">
+            <!-- <div class="thumbnail">
+                <img src="images/icons/naba-village.png" alt="">
+            </div> -->
+            <h2>HOME</h2>
+        </div>
         <div class="thumb" onclick="closeModal('top-17')" id="top-17">
             <!-- <div class="thumbnail">
                 <img src="images/icons/naba-farms.png" alt="">
@@ -500,6 +519,7 @@
         </div>
     </div>
 </div>
+<div class="home"></div>
 <div class="book-1"></div>
 <div class="book-2"></div>
 <div class="book-3"></div>
