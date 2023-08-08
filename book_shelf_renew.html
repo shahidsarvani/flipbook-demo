@@ -538,11 +538,23 @@
                     { src: "books/top17/34.jpg", title: "Page 34", },
                     { src: "books/page-darkbg.jpg", title: "Last" }
                 ],
+                startPage: 2,
+                lightboxStartPage: 2,
+                lightBox: true,
+                lightboxResetOnOpen: true,
+                singlePageMode: true,
+                sound: false // removes the page flip sound
+            });
+
+            let home_1 = $(".home").flipBook({
+                pages: [
+                    { src: "books/cover-main.jpg", title: "Cover Page", },
+                    { src: "books/page-darkbg.jpg", title: "Last" }
+                ],
                 startPage: 0,
                 lightboxStartPage: 0,
                 lightBox: true,
                 lightboxResetOnOpen: true,
-                singlePageMode: true,
                 sound: false // removes the page flip sound
             });
 
@@ -663,6 +675,20 @@
                     $('body.flipbook-overflow-hidden .flipbook-overlay').attr("style", "margin-top: 0px !important");
                 }
             });
+            jQuery(home_1).bind("pagechange", function(e){
+                console.log(e.page)
+                // if (e.page !== '2') {
+                    $('.bookshelf').show(250).fadeIn();
+                    $('.flipbook-bookLayer').css("height", "auto");
+                    $('.flipbook-menuBottom').css("display", "block").delay(25000).fadeIn();
+                    $('.flipbook-menu-btn').css("display", "block").delay(25000).fadeIn();
+                    // $('body.flipbook-overflow-hidden .flipbook-overlay').attr("style", "top: 150px !important");
+                    $('body.flipbook-overflow-hidden .flipbook-overlay').css("background", "block !important");
+                // }
+                // else {
+                //     $('.bookshelf').hide();
+                // }
+            });
 
         })
     </script>
@@ -672,6 +698,12 @@
 <body>
 <div class="bookshelf">
     <div class="covers">
+        <div class="thumb" onclick="closeModal('home')" id="home">
+            <!-- <div class="thumbnail">
+                <img src="images/icons/naba-village.png" alt="">
+            </div> -->
+            <h2>HOME</h2>
+        </div>
         <div class="thumb" onclick="closeModal('top-17')" id="top-17">
             <!-- <div class="thumbnail">
                 <img src="images/icons/naba-farms.png" alt="">
@@ -716,6 +748,7 @@
         </div>
     </div>
 </div>
+<div class="container home"></div>
 <div class="container book-1"></div>
 <div class="container book-2"></div>
 <div class="container book-3"></div>
