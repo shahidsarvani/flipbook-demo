@@ -567,6 +567,9 @@
                         location.reload();
                     })
                 }, 3000);
+                setTimeout(function() {
+                    $('.flipbook-menu').hide();
+                }, 1000)
             }
 
             jQuery(book_1).bind("pagechange", function(e){

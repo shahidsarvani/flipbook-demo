@@ -337,9 +337,9 @@ left: 0;
     -webkit-transform-style: preserve-3d;
 }
 
-.flipbook-center-container-wrapper {}
+/* .flipbook-center-container-wrapper {}
 
-.flipbook-center-wrapper {}
+.flipbook-center-wrapper {} */
 
 .flipbook-book {
     display: block;
@@ -970,9 +970,9 @@ left: 0;
     text-decoration: underline;
 }
 
-.flipbook-tocItem:hover {
+/* .flipbook-tocItem:hover {
 /*    background: rgba(128, 128, 128, .2) */
-}
+/* } */
 
 .flipbook-tocItem .right {
     float: right;
@@ -1149,12 +1149,12 @@ left: 0;
 
 /* ui */
 
-.flipbook-skin-color {
+/* .flipbook-skin-color {
     /*     -webkit-transition: all .3s ease-out;
     -moz-transition: all .2s ease-out;
     -o-transition: all .2s ease-out;
     transition: all .3s ease-out; */
-}
+/* } */
 
 .flipbook-font {
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
@@ -1270,9 +1270,9 @@ left: 0;
     color: #616161;
 }
 
-.flipbook-lightbox-toolbar {
+/* .flipbook-lightbox-toolbar {
     /* opacity:.6; */
-}
+/* } */
 
 .flipbook-lightbox-close {
     position: absolute !important;
@@ -1351,13 +1351,13 @@ left: 0;
     padding-bottom: 10px;
 }
 
-.flipbook-carousel-scroller {
+/* .flipbook-carousel-scroller {
     /* height:100%; */
     /* float:left; */
     /* padding:0; */
     /* position: absolute; */
     /* top:0; */
-}
+/* } */
 
 .flipbook-carousel-slide {
     -webkit-box-sizing: border-box;
@@ -1369,10 +1369,10 @@ left: 0;
     overflow: hidden;
 }
 
-.flipbook-carousel-slide .slide-inner {
+/* .flipbook-carousel-slide .slide-inner {
     /* height: 100%; */
     /* box-shadow: 10px 10px 50px rgb(50, 50, 50); */
-}
+/*} */
 
 .flipbook-carousel-slide .slide-wrapper {
     position: absolute;
@@ -1382,7 +1382,7 @@ left: 0;
     bottom: 0;
 }
 
-.flipbook-carousel-slide canvas {}
+/* .flipbook-carousel-slide canvas {} */
 
 .flipbook-carousel-page {
     /* height:100%; */
@@ -1588,11 +1588,11 @@ left: 0;
     pointer-events: none;
 }
 
-.cssload-speeding-wheel {
+/* .cssload-speeding-wheel {
     width: 24px;
     height: 24px;
     /* margin: 0 auto; */
-    border: 3px solid rgba(0, 0, 0, 0.4);
+    /*border: 3px solid rgba(0, 0, 0, 0.4);
     border-radius: 50%;
     border-left-color: rgba(255, 255, 255, 0.2);
     border-right-color: rgba(255, 255, 255, 0.2);
@@ -1607,7 +1607,7 @@ left: 0;
     margin-left: -15px;
     margin-top: -15px;
     z-index: 3;
-}
+} */
 
 @keyframes cssload-spin {
     100% {
